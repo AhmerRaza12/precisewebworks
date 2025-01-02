@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Banner = () => {
   return (
-    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+    <div class="relative lg:h-[80vh] h-screen text-white overflow-hidden">
   <div class="absolute inset-0">
     <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background " class="object-cover object-center w-full h-full" />
     <div class="absolute inset-0 bg-black opacity-60"></div>
@@ -10,7 +10,7 @@ export const Banner = () => {
   
   <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
   <h1
-  class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-7xl">
+  class="mx-auto max-w-4xl font-display text-3xl font-bold tracking-normal text-white-300 dark:text-gray-300 sm:text-6xl">
   Boost Your Business with a Custom Website
   <span class="relative whitespace-nowrap text-maroon">
     <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-2/3 left-0 h-[0.58em] w-full fill-maroon dark:fill-orange-300/60" preserveAspectRatio="none">
@@ -20,7 +20,7 @@ export const Banner = () => {
   </span>
 </h1>
 
-    <p class="text-lg text-white-300 mb-8 my-6">Discover amazing features and services that await you.</p>
+    <p class="text-xl text-gray-400 mb-6 my-4">Discover amazing features and services that await you.</p>
     <button
         class="w-full px-4 py-4 text-sm font-semibold leading-6 uppercase duration-200 transform border-2 rounded-md cursor-pointer border-maroon focus:ring-4 hover:bg-maroon focus:bg-maroon focus:ring-maroon focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:-translate-y-2 tracking-wider">
         Get Started

@@ -1,5 +1,10 @@
 import React from 'react';
-
+import graphicDesignPic from '../assets/services/graphic-design.png';
+import webDevelopmentPic from '../assets/services/web-development.jpg';
+import uiUxDesignPic from '../assets/services/ui-ux.jpg';
+import amazonManagementPic from '../assets/services/amazon.jpg';
+import searchEngineOptimizationPic from '../assets/services/seo.png';
+import contentManagementPic from '../assets/services/content-management.jpg';
 const Services = () => {
   return (
     <>
@@ -21,7 +26,7 @@ const Services = () => {
               href="/"
               className="group relative col-span-2 flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64">
               <img
-                src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+                src={graphicDesignPic}
                 loading="lazy"
                 alt="Minh Pham"
                 className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -37,7 +42,7 @@ const Services = () => {
               href="/"
               className="group relative col-span-1 flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-72">
               <img
-                src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
+                src={webDevelopmentPic}
                 loading="lazy"
                 alt="Magicle"
                 className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -53,7 +58,7 @@ const Services = () => {
               href="/"
               className="group relative col-span-1 flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64">
               <img
-                src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
+                src={uiUxDesignPic}
                 loading="lazy"
                 alt="Martin Sanchez"
                 className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -68,7 +73,7 @@ const Services = () => {
               href="/"
               className="group relative col-span-1 flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64">
               <img
-                src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
+                src={amazonManagementPic}
                 loading="lazy"
                 alt="Martin Sanchez"
                 className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -83,7 +88,7 @@ const Services = () => {
               href="/"
               className="group relative col-span-1 flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-72">
               <img
-                src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
+                src={searchEngineOptimizationPic}
                 loading="lazy"
                 alt="Martin Sanchez"
                 className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -99,7 +104,7 @@ const Services = () => {
               href="/"
               className="group relative col-span-2 flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64">
               <img
-                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+                src={contentManagementPic}
                 loading="lazy"
                 alt="Lorenzo Herrera"
                 className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"

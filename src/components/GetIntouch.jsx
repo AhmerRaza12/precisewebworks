@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { MdMail, MdPhone } from 'react-icons/md'
 const GetIntouch = () => {
   return (
     <div className='bg-primary relative'>
@@ -7,7 +7,7 @@ const GetIntouch = () => {
 
     
     <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-        <img class="h-full w-full object-cover" src="https://picsum.photos/id/1018/2000" alt="Winding mountain road"/>
+        <img class="h-full w-full object-cover" src="https://precisewebworks.com/wp-content/uploads/2022/11/gl-1024x925.png" alt="Winding mountain road"/>
     </div>
     
 
@@ -21,13 +21,15 @@ const GetIntouch = () => {
             Whatever it is you need, an entirely new website or an old one revamped, our customer representatives are just a call away to answer all your queries. We{"'"}re always excited to start your project.
             </p>
           
-            <div class="mt-8 flex justify-center space-x-4">
+            <div class="mt-8 flex space-x-4">
             <button onClick={() => window.location.href = 'mailto:help@precisetech.com'}
         class="w-full px-4 py-4 text-sm font-semibold leading-6 text-gray-50  uppercase duration-200 transform border-2 rounded-md cursor-pointer border-maroon focus:ring-4 hover:bg-maroon focus:bg-maroon focus:ring-maroon focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:-translate-y-2 tracking-wider">
+            <MdMail className="inline-block mr-2 text-gray-400 " />
         Email
     </button>
     <button onClick={() => window.location.href = 'tel:+16304514599'}
         class="w-full px-4 py-4 text-sm font-semibold leading-6 text-gray-50 uppercase duration-200 transform border-2 rounded-md cursor-pointer border-maroon focus:ring-4 hover:bg-maroon focus:bg-maroon focus:ring-maroon focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:-translate-y-2 tracking-wider">
+        <MdPhone className="inline-block mr-2 text-gray-400 " />
         Call Us
     </button>
             </div>

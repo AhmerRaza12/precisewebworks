@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Features from "./components/Features";
 import GetIntouch from "./components/GetIntouch";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
       <Navbar />
       <Banner />
       <Services />
-      <Portfolio />
       <Contact />
       <Features />
+      <Portfolio />
       <GetIntouch/>
+    <Footer/>
     </Router>
   );
 }
