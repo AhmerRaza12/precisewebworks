@@ -12,7 +12,7 @@ const Services = () => {
 
           <p class="mt-4 text-lg sm:text-xl leading-8 text-gray-800 sm:px-16" style={{whiteSpace:"pre-line"}}>Discover a range of expert services tailored to meet your business needs and elevate your success in every way.</p>
         </div>
-      <div className="bg-white dark:bg-gray-800 h-screen py-6 sm:py-4 lg:py-8">
+      <div className="bg-white dark:bg-gray-800  py-6 sm:py-4 lg:py-8">
         <div className="mx-auto max-w-screen-lg px-6 md:px-10">
           <div className="grid grid-cols-4 gap-4 sm:gap-8">
 

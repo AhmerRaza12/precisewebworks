@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="container" className="p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative bg-black">
+    <div id="container" className="p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative bg-primary">
       <div className="mr-10">
         <img
           className="rounded-lg min-w-[100px] w-full h-[500px] md:w-[100%] md:h-[600px]"
@@ -45,7 +45,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <label htmlFor="service" className="block text-white font-medium">Service Selection</label>
+            <label htmlFor="service" className="block text-white font-medium">Service</label>
             <select
               id="service"
               name="service"

@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Features from "./components/Features";
+import GetIntouch from "./components/GetIntouch";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Portfolio />
       <Contact />
       <Features />
+      <GetIntouch/>
     </Router>
   );
 }
