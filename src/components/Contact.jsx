@@ -2,7 +2,10 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div id="container" className="p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative bg-primary">
+    <div
+  id="container"
+  className="p-20 sm:p-16 md:p-20 lg:p-24 xl:p-20 w-auto flex flex-col md:flex-row items-center justify-center px-4 sm:px-8 md:px-24 lg:px-24 xl:px-24 relative bg-primary"
+>
       <div className="mr-10 flex flex-col items-center justify-center">
         <img
           className="rounded-lg min-w-[100px] w-full h-[500px] md:w-[100%] md:h-[500px]"
@@ -16,7 +19,7 @@ const Contact = () => {
           Contact Us
         </h1>
 
-        <p className="text-white w-full sm:w-[35rem] md:w-[30rem] mb-10 text-center">
+        <p className="text-white w-full  mb-10 text-center">
           Get in touch with our customer service representatives and designers to ensure that your business is nothing less than a success.
         </p>
 

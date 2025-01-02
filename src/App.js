@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Features from "./components/Features";
 import GetIntouch from "./components/GetIntouch";
 import Footer from "./components/Footer";
+import HeroSections from "./components/HeroSections";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Contact />
       <Features />
       <Portfolio />
+      <HeroSections/>
       <GetIntouch/>
     <Footer/>
     </Router>

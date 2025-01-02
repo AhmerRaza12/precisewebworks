@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Banner = () => {
   return (
-    <div class="relative lg:h-[80vh] h-screen text-white overflow-hidden">
+    <div class="relative lg:h-[75vh]  lg:mb-40 h-screen text-white overflow-hidden">
   <div class="absolute inset-0">
     <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background " class="object-cover object-center w-full h-full" />
     <div class="absolute inset-0 bg-black opacity-60"></div>

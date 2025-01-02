@@ -1,5 +1,7 @@
 import React from 'react'
 import { MdMail, MdPhone } from 'react-icons/md'
+
+import bgImage from '../assets/getintouch-bg.jpg'
 const GetIntouch = () => {
   return (
     <div className='bg-primary relative'>
@@ -7,7 +9,7 @@ const GetIntouch = () => {
 
     
     <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-        <img class="h-full w-full object-cover" src="https://precisewebworks.com/wp-content/uploads/2022/11/gl-1024x925.png" alt="Winding mountain road"/>
+        <img class="h-[500px] w-full object-cover" src={bgImage} alt="Background Getintouch"/>
     </div>
     
 

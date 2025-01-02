@@ -33,13 +33,13 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="portfolio-section py-16 px-4">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
+      <div className="container mx-auto mb-8">
+        <div className="text-center mb-6">
           <h2 className="text-4xl font-bold mb-4 text-primary">Portfolio</h2>
           <p className="text-lg text-maroon font-semibold">Browse some of our Awesome Projects</p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center mb-8 justify-center">
+        <div className="flex flex-col md:flex-row items-center mb-10 justify-center">
           {['All', 'Web Design', 'App Development', 'Search Engine Optimization', 'PPC', 'Branding'].map((tab) => (
             <button
               key={tab}

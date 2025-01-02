@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
           <div className="">
             <h6 className="text-lg font-medium text-maroon max-[470px]:text-center mb-7">Contact </h6>
-            <ul className="flex flex-col max-[470px]:items-center gap-6">
+            <ul className="flex flex-col max-[470px]:items-center gap-3">
               <li>
                 
                 <a href="tel:+16304514599"
@@ -203,8 +203,11 @@ const Footer = () => {
           </button>
           
         </div>
+        
       </div>
+      
     </div>
+    
   
    
   </section>
