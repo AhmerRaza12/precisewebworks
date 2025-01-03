@@ -17,7 +17,7 @@ const SeoCarouselSlides = () => {
   }, [slides.length]);
 
   return (
-    <section className="relative w-full h-[600px] overflow-hidden">
+    <section className="relative w-full h-[550px] overflow-hidden">
 
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-1000 ease-in-out"
