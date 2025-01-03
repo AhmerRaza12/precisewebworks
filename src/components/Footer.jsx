@@ -55,7 +55,7 @@ const Footer = () => {
                   </linearGradient>
                 </defs>
               </svg> */}
-              <img src={staticLogo} alt="Logo" srcset="" className='lg:h-16 md:h-12 sm:h-14 max-h-16 max-sm:mx-auto'/>
+              <img src={staticLogo} alt="Logo"  className='lg:h-16 md:h-12 sm:h-14 max-h-16 max-sm:mx-auto'/>
             </a>
             <p className="text-base font-normal text-gray-300 max-[470px]:text-center">
             Precise Web works is a reputable design agency that is trusted by thousands of people all around the world. Our team has made sure to never provide services that are less than the best in the market.
@@ -176,6 +176,23 @@ const Footer = () => {
             </div>
           </button> */}
 
+          {/* Instagram Button */}
+
+          <button
+            className="w-9 h-9 flex items-center justify-center border border-gray-300 rounded-full relative overflow-hidden bg-white shadow-sm shadow-gray-200 group transition-all duration-300 focus-within:outline-0">
+            <svg className="fill-black z-10 transition-all duration-300 group-hover:fill-white group-focus-within:fill-white"
+            xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none'>
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.773.13 4.665.392 3.757 1.3 2.85 2.208 2.588 3.316 2.53 4.595.014 8.332 0 8.741 0 12s.014 3.668.072 4.948c.058 1.279.32 2.387 1.228 3.295.908.908 2.016 1.17 3.295 1.228C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.279-.058 2.387-.32 3.295-1.228.908-.908 1.17-2.016 1.228-3.295.058-1.279.072-1.688.072-4.948s-.014-3.668-.072-4.948c-.058-1.279-.32-2.387-1.228-3.295-.908-.908-2.016-1.17-3.295-1.228C15.668.014 15.259 0 12 0zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.207 0-4-1.793-4-4s1.793-4 4-4 4 1.793 4 4-1.793 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441z"/>
+            </svg>
+            <div
+              className="absolute top-full left-0 w-full h-full rounded-full bg-pink-500 z-0 transition-all duration-500 group-hover:top-0 group-focus-within:top-0">
+            </div>
+
+            
+          </button>
+
+
+        {/* Twitter Button */}
           <button
             className="w-9 h-9 flex items-center justify-center border border-gray-300 rounded-full relative overflow-hidden bg-white shadow-sm shadow-gray-200 group transition-all duration-300 focus-within:outline-0">
             <svg className="fill-black z-10 transition-all duration-300 group-hover:fill-white group-focus-within:fill-white"
@@ -188,7 +205,7 @@ const Footer = () => {
               className="absolute top-full left-0 w-full h-full rounded-full bg-black z-0 transition-all duration-500 group-hover:top-0 group-focus-within:top-0">
             </div>
           </button>
-
+            {/* Facebook button */}
           <button
             className="w-9 h-9 flex items-center justify-center border border-gray-300 relative overflow-hidden rounded-full bg-white shadow-sm shadow-gray-200 group transition-all duration-300 focus-within:outline-0">
             <svg className="relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white group-focus-within:fill-white"

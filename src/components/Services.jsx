@@ -12,10 +12,10 @@ const Services = () => {
         className="my-2 mt-20 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-400 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-400">
         <h3 className="mx-6 mb-0 text-center capitalize text-6xl md:text-6xl  font-extrabold text-black">our services</h3>
       </div>
-      <div class="pb-4 text-center">
-          <span class="inline-flex items-center rounded-2xl  bg-red-50 px-4 py-1.5 text-xs sm:text-sm font-serif font-medium text-maroon">Explore Our Wide Range of Expert Services </span>
+      <div className="pb-4 text-center">
+          <span className="inline-flex items-center rounded-2xl  bg-red-50 px-4 py-1.5 text-xs sm:text-sm font-serif font-medium text-maroon">Explore Our Wide Range of Expert Services </span>
 
-          <p class="mt-4 text-lg sm:text-xl leading-8 text-gray-800 sm:px-16" style={{whiteSpace:"pre-line"}}>Discover a range of expert services tailored to meet your business needs and elevate your success in every way.</p>
+          <p className="mt-4 text-lg sm:text-xl leading-8 text-gray-800 sm:px-16" style={{whiteSpace:"pre-line"}}>Discover a range of expert services tailored to meet your business needs and elevate your success in every way.</p>
         </div>
       <div className="bg-white dark:bg-gray-800  py-6 sm:py-4 lg:py-8 mb-40">
         <div className="mx-auto max-w-screen-lg px-6 md:px-10">

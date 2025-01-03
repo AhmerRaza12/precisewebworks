@@ -1,25 +1,21 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import { Banner } from "./components/Banner";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Features from "./components/Features";
-import GetIntouch from "./components/GetIntouch";
 import Footer from "./components/Footer";
-import HeroSections from "./components/HeroSections";
+import HomePage from "./pages/HomePage";
+import Seo from "./pages/Seo";
 
 function App() {
   return (
     <Router>
+      {/* on all routes navbar and footer are there */}
       <Navbar />
-      <Banner />
-      <Services />
-      <Contact />
-      <Features />
-      <Portfolio />
-      <HeroSections/>
-      <GetIntouch/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path='/seo' element={<Seo/>}/>
+        {/* <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} /> */}
+      </Routes>
     <Footer/>
     </Router>
   );

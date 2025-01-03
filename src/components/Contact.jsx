@@ -32,7 +32,7 @@ const Contact = () => {
         type="text"
         id="name"
         name="name"
-        className="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon"
+        className="w-full p-3 rounded-lg bg-maroon text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon placeholder:text-white"
         placeholder="Enter your name"
       />
     </div>
@@ -43,7 +43,7 @@ const Contact = () => {
         type="email"
         id="email"
         name="email"
-        className="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon"
+        className="w-full p-3 rounded-lg bg-maroon text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon placeholder:text-white"
         placeholder="Enter your email"
       />
     </div>
@@ -55,7 +55,7 @@ const Contact = () => {
       <select
         id="service"
         name="service"
-        className="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon"
+        className="w-full p-3 rounded-lg bg-maroon text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon"
       >
         <option value="web_design">Web Design</option>
         <option value="app_dev">App Development</option>
@@ -70,7 +70,7 @@ const Contact = () => {
         type="tel"
         id="phone"
         name="phone"
-        className="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon"
+        className="w-full p-3 rounded-lg bg-maroon text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon placeholder:text-white"
         placeholder="Enter your phone number"
       />
     </div>
@@ -82,7 +82,7 @@ const Contact = () => {
       id="message"
       name="message"
       rows="3"
-      className="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon"
+      className="w-full p-3 rounded-lg bg-maroon text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-maroon placeholder:text-white"
       placeholder="Your message"
     />
   </div>
