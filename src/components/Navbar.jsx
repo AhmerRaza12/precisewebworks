@@ -63,7 +63,7 @@ export const Navbar = () => {
               className={`absolute bg-gray-800 dark:bg-gray-700 text-white py-2 mt-2 rounded shadow-lg w-48 z-50 transition-all ${isDropdownOpen ? "block" : "hidden"}`}
             >
               <Link
-                to="/web-development"
+                to="/seo"
                 className="block px-4 py-2 hover:bg-maroon hover:text-white transition-colors"
               >
                 SEO
