@@ -26,49 +26,61 @@ const SeoTypes = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
-      {/* SEO Content */}
+      {/* SEO Content with Fade-in Animation */}
       <div className="relative flex flex-col lg:flex-row items-center">
-        <div className="lg:w-1/2 flex justify-center h-72">
-          <img
-            src={seoContent[activeStep].image}
-            alt={seoContent[activeStep].title}
-            className="rounded-lg shadow-xl w-full max-w-md object-cover"
-          />
-        </div>
-        <div className="lg:w-1/2 mt-6 lg:mt-0 lg:pl-8 text-center lg:text-left">
-          <h2 className="text-2xl font-bold text-maroon mb-4">
-            {seoContent[activeStep].title}
-          </h2>
-          <p className="text-gray-700">{seoContent[activeStep].description}</p>
-        </div>
+        {/* Conditionally Render Active Step */}
+        {seoContent.map((content, index) => {
+          return (
+            activeStep === index && (
+              <div
+                key={index}
+                className="flex flex-col lg:flex-row items-center opacity-0 scale-y-150 transition-all duration-1500 ease-out animate-fade-in"
+              >
+                <div className="lg:w-1/2 flex justify-center h-72">
+                  <img
+                    src={content.image}
+                    alt={content.title}
+                    className="rounded-lg shadow-xl w-full max-w-md object-cover"
+                  />
+                </div>
+                <div className="lg:w-1/2 mt-6 lg:mt-0 lg:pl-10 text-center lg:text-left">
+                  <h2 className="text-3xl font-bold text-maroon mb-6 transition duration-700 ease-in-out">
+                    {content.title}
+                  </h2>
+                  <p className="text-lg text-gray-700 mb-4">{content.description}</p>
+                </div>
+              </div>
+            )
+          );
+        })}
       </div>
 
       {/* Stepper */}
       <div className="relative flex items-center justify-center mt-8">
-  {/* Stepper Line */}
-  <div
-    className="absolute h-1 bg-maroon"
-    style={{
-      width: `${(seoContent.length - 1) * 15}rem`, 
-    }}
-  ></div>
+        {/* Stepper Line */}
+        <div
+          className="absolute h-1 bg-maroon"
+          style={{
+            width: `${(seoContent.length - 1) * 15}rem`,
+          }}
+        ></div>
 
-
-{seoContent.map((_, index) => (
-    <button
-      key={index}
-      className={`h-6 w-6 rounded-full bg-red-600 border-2 z-10 ${
-        activeStep === index
-          ? 'border-white ring-2 ring-maroon/100'
-          : 'border-gray-100'
-      }`}
-      style={{
-        marginLeft: index > 0 ? '15rem' : 0, 
-      }}
-      onClick={() => setActiveStep(index)}
-    />
-  ))}
-</div>
+        {/* Stepper Buttons */}
+        {seoContent.map((_, index) => (
+          <button
+            key={index}
+            className={`h-6 w-6 rounded-full bg-red-600 border-2 z-10 transition-all duration-500 ease-in-out ${
+              activeStep === index
+                ? 'border-white ring-2 ring-maroon/100'
+                : 'border-gray-100'
+            }`}
+            style={{
+              marginLeft: index > 0 ? '15rem' : 0,
+            }}
+            onClick={() => setActiveStep(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };

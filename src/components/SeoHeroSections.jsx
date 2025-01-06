@@ -8,7 +8,7 @@ const SeoHeroSections = () => {
   return (
     <>
     <div className="relative overflow-hidden border-b w-full dark:border-gray-700 dark:bg-gray-900">
-    <div className="px-6 py-8 sm:px-6 sm:py-20">
+    <div className="px-6 py-8 sm:px-6 ">
         <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-base font-semibold text-red-600 dark:text-pink-300 tracking-wide uppercase">The need of Seo</h2>
           <p

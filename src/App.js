@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import Seo from "./pages/Seo";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path='/seo' element={<Seo/>}/>
+        <Route path= '/blogs' element={<Blogs/>}/>
         {/* <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} /> */}

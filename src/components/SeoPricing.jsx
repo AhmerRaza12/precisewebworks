@@ -11,7 +11,8 @@ const SeoPricing = () => {
         <div className="space-y-4  lg:grid md:grid-cols-3 lg:space-y-0 lg:gap-6">
 
             <div
-                className="mx-auto flex max-w-lg space-y-4 items-start flex-col rounded-3xl border border-gray-200 bg-gray-300 p-6 text-maroon xl:p-6 w-full">
+                className="mx-auto flex max-w-lg space-y-4 items-start flex-col rounded-3xl border border-gray-200 bg-gray-300 p-6 text-maroon xl:p-6 w-full relative">
+
 
                 <h3 className="text-lg font-normal ">SEO SILVER</h3>
                 <div className="my-2 flex items-baseline justify-center ">
@@ -284,8 +285,11 @@ Local Business Listings</span>
             </div>
 
             <div
-                className="mx-auto flex max-w-lg space-y-4 items-start flex-col rounded-3xl border border-gray-300  bg-[#ddd591] p-6 text-maroon xl:p-6 w-full">
-
+                className="mx-auto flex max-w-lg space-y-4 items-start flex-col rounded-3xl border border-gray-300  bg-[#ddd591] p-6 text-maroon xl:p-6 w-full relative">
+        {/* Ribbon tag */}
+        <div className="absolute top-0 right-0 transform  origin-top-right bg-maroon text-white px-4 py-1 text-xs font-semibold z-10 mt-2 mr-4 rounded-lg">
+         Popular
+        </div>
                 <h3 className="text-lg font-normal text-maroon ">SEO GOLD</h3>
                 <div className="my-2 flex items-baseline justify-center ">
                     <span className="mr-1 text-4xl font-extrabold text-maroon">$999</span>
