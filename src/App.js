@@ -4,7 +4,8 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import Seo from "./pages/Seo";
 import Blogs from "./pages/Blogs";
-
+import Contact from "./pages/Contact";
+import FirstBlog from "./pages/inner-blogs/FirstBlog";
 function App() {
   return (
     <Router>
@@ -14,6 +15,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path='/seo' element={<Seo/>}/>
         <Route path= '/blogs' element={<Blogs/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/blogs/first-blog' element={<FirstBlog/>}/>
         {/* <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} /> */}
