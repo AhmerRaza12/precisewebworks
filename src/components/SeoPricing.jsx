@@ -4,7 +4,7 @@ const SeoPricing = () => {
   return (
     <div className="flex  items-center justify-center bg-primary">
 
-    <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
+    <div className="mx-auto xl:w-[1200px]   px-4 py-8 lg:px-6 lg:py-16">
         <div className="mx-auto mb-8 max-w-screen-md  lg:mb-12 text-center">
             <h2 className="mb-10 text-4xl font-bold tracking-tight text-white">Pricing Plan</h2>
         </div>
@@ -25,9 +25,9 @@ const SeoPricing = () => {
         
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>5 Targeted Keywords</span>
                     </li>
@@ -35,9 +35,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Prior Analysis</span>
                     </li>
@@ -45,9 +45,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Business Analysis</span>
                     </li>
@@ -55,9 +55,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Consumer Analysis</span>
                     </li>
@@ -65,9 +65,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Competitor Analysis</span>
@@ -76,9 +76,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         On-Page Optimization</span>
@@ -87,9 +87,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Meta Tags Optimization</span>
@@ -98,9 +98,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -110,9 +110,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         HTML Optimization</span>
@@ -121,9 +121,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Robots.txt Creation</span>
@@ -132,9 +132,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Sitemap.xml Creation</span>
@@ -143,9 +143,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -155,9 +155,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Off-Page Optimization</span>
@@ -166,9 +166,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -178,9 +178,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -190,9 +190,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -202,9 +202,9 @@ const SeoPricing = () => {
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -215,9 +215,9 @@ Forums/FAQ’s</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -228,9 +228,9 @@ Link Building</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -241,9 +241,9 @@ Directory Submission</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -254,9 +254,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -266,9 +266,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -284,7 +284,7 @@ Local Business Listings</span>
             </div>
 
             <div
-                className="mx-auto flex space-y-4 items-start flex-col rounded-3xl border border-gray-300  bg-[#ddd591] p-6 text-maroon xl:p-6 w-full">
+                className="mx-auto flex max-w-lg space-y-4 items-start flex-col rounded-3xl border border-gray-300  bg-[#ddd591] p-6 text-maroon xl:p-6 w-full">
 
                 <h3 className="text-lg font-normal text-maroon ">SEO GOLD</h3>
                 <div className="my-2 flex items-baseline justify-center ">
@@ -299,9 +299,9 @@ Local Business Listings</span>
         
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>10 Targeted Keywords</span>
                     </li>
@@ -309,9 +309,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Prior Analysis</span>
                     </li>
@@ -319,9 +319,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Business Analysis</span>
                     </li>
@@ -329,9 +329,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Consumer Analysis</span>
                     </li>
@@ -339,9 +339,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Competitor Analysis</span>
@@ -350,9 +350,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         On-Page Optimization</span>
@@ -361,9 +361,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Meta Tags Optimization</span>
@@ -372,9 +372,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -384,9 +384,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         HTML Optimization</span>
@@ -395,9 +395,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Robots.txt Creation</span>
@@ -406,9 +406,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Sitemap.xml Creation</span>
@@ -417,9 +417,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -429,9 +429,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Off-Page Optimization</span>
@@ -440,9 +440,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -452,9 +452,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -464,9 +464,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -476,9 +476,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -489,9 +489,9 @@ Forums/FAQ’s</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -502,9 +502,9 @@ Link Building</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -515,9 +515,9 @@ Directory Submission</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -528,9 +528,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -540,9 +540,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -565,7 +565,6 @@ Local Business Listings</span>
                     <span className="text-red-700 line-through">$3499 only</span>
                 </div>
 
-                <p className="font-light text-gray-600 sm:text-sm">Best option for personal use & for your next project.</p>
                 
  
                     <ul  className="mb-4 space-y-1 text-left text-gray-600  text-sm">
@@ -573,9 +572,9 @@ Local Business Listings</span>
         
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>25 Targeted Keywords</span>
                     </li>
@@ -583,9 +582,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Prior Analysis</span>
                     </li>
@@ -593,9 +592,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Business Analysis</span>
                     </li>
@@ -603,9 +602,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>Consumer Analysis</span>
                     </li>
@@ -613,9 +612,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Competitor Analysis</span>
@@ -624,9 +623,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         On-Page Optimization</span>
@@ -635,9 +634,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Meta Tags Optimization</span>
@@ -646,9 +645,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -658,9 +657,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         HTML Optimization</span>
@@ -669,9 +668,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Robots.txt Creation</span>
@@ -680,9 +679,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Sitemap.xml Creation</span>
@@ -691,9 +690,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -703,9 +702,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         Off-Page Optimization</span>
@@ -714,9 +713,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -726,9 +725,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -738,9 +737,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -750,9 +749,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -763,9 +762,9 @@ Forums/FAQ’s</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -776,9 +775,9 @@ Link Building</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -789,9 +788,9 @@ Directory Submission</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -802,9 +801,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -814,9 +813,9 @@ Local Business Listings</span>
 
                         <svg className="h-4 w-4 flex-shrink-0 bg-maroon rounded-full p-0.5 text-white" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                 d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"></path>
+                                clipRule="evenodd"></path>
                         </svg>
                         <span>
                         
@@ -824,7 +823,7 @@ Local Business Listings</span>
                     </li>
                 </ul>
                 <a href='/'
-                    className="cursor-pointer bg-maroon w-full rounded-md  p-3  text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
+                    className="cursor-pointer bg-maroon w-full rounded-md  p-3 text-center  text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
                     started</a>
 
             </div>

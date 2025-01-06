@@ -5,6 +5,7 @@ import SeoContact from '../components/SeoContact';
 import SeoHeroSections from '../components/SeoHeroSections';
 import ProcessSeo from '../components/ProcessSeo';
 import SeoPricing from '../components/SeoPricing';
+import SeoTypes from '../components/SeoTypes';
 
 const Seo = () => {
     return (
@@ -13,6 +14,7 @@ const Seo = () => {
         <SeoContact/>
         <SeoHeroSections/>
         <ProcessSeo/>
+        <SeoTypes/>
         <SeoPricing/>
         </>
 
