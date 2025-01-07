@@ -1,16 +1,12 @@
 import React, { useState, useRef } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link , useLocation } from "react-router-dom";
 import Logoimg from "../assets/logo.gif";
 
 export const Navbar = () => {
-
+  const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  
-
   const timeoutRef = useRef(null);
-
-
   const handleMouseLeave = () => {
 
     timeoutRef.current = setTimeout(() => {
@@ -26,6 +22,11 @@ export const Navbar = () => {
     setIsDropdownOpen(true);
   };
 
+  const getActiveClass = (path) => {
+    return location.pathname === path ? "nav-link text-maroon dark:text-maroon uppercase"
+      : "nav-link text-white dark:text-gray-200 hover:text-maroon dark:hover:text-white transition-colors duration-300 uppercase";
+  }
+
   return (
     <header className="bg-primary dark:bg-gray-800 shadow-lg">
       <nav className="container mx-auto px-10 py-2 flex justify-between items-center">
@@ -33,12 +34,12 @@ export const Navbar = () => {
           <img src={Logoimg} alt="logo" height={70} width={70} />
         </Link>
         <div className="hidden md:flex justify-between items-center space-x-10">
-          <a
-            href="/"
-            className="nav-link text-white dark:text-gray-200 hover:text-maroon dark:hover:text-white transition-colors duration-300 uppercase"
+          <Link
+            to="/"
+            className={getActiveClass("/")}
           >
             Home
-          </a>
+          </Link>
           <div
             className="relative"
             onMouseEnter={handleMouseEnter}   
@@ -107,36 +108,36 @@ export const Navbar = () => {
             </div>
           </div>
 
-          <a
-            href="/about"
-            className="nav-link text-white dark:text-gray-200 hover:text-maroon dark:hover:text-white transition-colors duration-300 uppercase"
+          <Link
+            to={'/about'}
+            className={getActiveClass("/about")}
           >
             About Us
-          </a>
-          <a
-            href="/portfolio"
-            className="nav-link text-white dark:text-gray-200 hover:text-maroon dark:hover:text-white transition-colors duration-300 uppercase"
+          </Link>
+          <Link
+            to={'/portfolio'}
+            className={getActiveClass("/portfolio")}
           >
             Portfolio
-          </a>
-          <a
-            href="/pricing"
-            className="nav-link text-white dark:text-gray-200 hover:text-maroon dark:hover:text-white transition-colors duration-300 uppercase"
+          </Link>
+          <Link
+            to='/pricing'
+            className={getActiveClass("/pricing")}
           >
             Pricing
-          </a>
-          <a
-            href="/contact"
-            className="nav-link text-white dark:text-gray-200 hover:text-maroon dark:hover:text-white transition-colors duration-300 uppercase"
+          </Link>
+          <Link
+            to='/contact'
+            className={getActiveClass("/contact")}
           >
             Contact Us
-          </a>
-          <a
-            href="/blogs"
-            className="nav-link text-white dark:text-gray-200 hover:text-maroon dark:hover:text-white transition-colors duration-300 uppercase"
+          </Link>
+          <Link
+            to='/blogs'
+            className={getActiveClass("/blogs")}
           >
             Blogs
-          </a>
+          </Link>
         </div>
         <button
           id="mobileMenuButton"
