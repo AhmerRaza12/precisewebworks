@@ -6,6 +6,8 @@ import Seo from "./pages/Seo";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import FirstBlog from "./pages/inner-blogs/FirstBlog";
+import Termsncon from "./pages/Termsncon";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
   return (
     <Router>
@@ -17,6 +19,8 @@ function App() {
         <Route path= '/blogs' element={<Blogs/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/blogs/first-blog' element={<FirstBlog/>}/>
+        <Route path ='/terms-and-conditions/' element={<Termsncon/>}/>
+        <Route path ='/privacy-policy/' element={<PrivacyPolicy/>}/>
         {/* <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} /> */}
