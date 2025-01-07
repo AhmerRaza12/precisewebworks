@@ -62,48 +62,48 @@ const SeoHeroSections = () => {
     </div>
     </div>
 </div>
-<div class="bg-primary py-8">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
-      <h1 class="lg:text-6xl text-4xl md:text-5xl font-bold tracking-tight text-white text-center">Search
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-maroon to-red-900"> Engine Optimization</span>
+<div className="bg-primary py-8">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="mx-auto max-w-5xl lg:text-center flex flex-col justify-center items-center">
+      <h1 className="lg:text-6xl text-4xl md:text-5xl font-bold tracking-tight text-white text-center">Search
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-maroon to-red-900"> Engine Optimization</span>
       </h1>
     </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-8 lg:mt-12 lg:max-w-4xl">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-8">
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-white">
-            <div class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><RiComputerLine class="h-6 w-6 text-white">
+    <div className="mx-auto mt-16 max-w-2xl sm:mt-8 lg:mt-12 lg:max-w-4xl">
+      <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-8">
+        <div className="relative pl-16">
+          <dt className="text-base font-semibold leading-7 text-white">
+            <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><RiComputerLine className="h-6 w-6 text-white">
                 
               </RiComputerLine></div>Competitive Analysis
           </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-400">We will keep an eye on the competition for you. Through our proprietary techniques, we can know their profitable keywords.</dd>
+          <dd className="mt-2 text-base leading-7 text-gray-400">We will keep an eye on the competition for you. Through our proprietary techniques, we can know their profitable keywords.</dd>
         </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-white">
-            <div class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><SiPagespeedinsights class="h-6 w-6 text-white">
+        <div className="relative pl-16">
+          <dt className="text-base font-semibold leading-7 text-white">
+            <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><SiPagespeedinsights className="h-6 w-6 text-white">
 
               </SiPagespeedinsights></div>
               On-Page Optimization
           </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-400">We optimize your existing and new web pages to rank higher in Google and other search engines for profitable keywords.
+          <dd className="mt-2 text-base leading-7 text-gray-400">We optimize your existing and new web pages to rank higher in Google and other search engines for profitable keywords.
           </dd>
         </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-white">
-            <div class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><TbWorldUpload class="h-6 w-6 text-white">
+        <div className="relative pl-16">
+          <dt className="text-base font-semibold leading-7 text-white">
+            <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><TbWorldUpload className="h-6 w-6 text-white">
             
               </TbWorldUpload></div>Long Lasting Results
           </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-400">We create ethical, safe white-hat links that ensure that your rankings don't drop with every algorithm update.</dd>
+          <dd className="mt-2 text-base leading-7 text-gray-400">We create ethical, safe white-hat links that ensure that your rankings don't drop with every algorithm update.</dd>
         </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-white">
-            <div class="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><GiRelationshipBounds class="h-6 w-6 text-white">
+        <div className="relative pl-16">
+          <dt className="text-base font-semibold leading-7 text-white">
+            <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-maroon"><GiRelationshipBounds className="h-6 w-6 text-white">
           
               </GiRelationshipBounds></div>Dedicated Support
           </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-400">A dedicated account manager working closely with a client yields the highest ROI. We dedicate a manager to your unique business.</dd>
+          <dd className="mt-2 text-base leading-7 text-gray-400">A dedicated account manager working closely with a client yields the highest ROI. We dedicate a manager to your unique business.</dd>
         </div>
       </dl>
     </div>
