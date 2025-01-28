@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment Website- Terms</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @layer utilities {
+        .primary-color {
+          color: #172e8d;
+        }
+        .bg-primary-color {
+          background-color: #172e8d;
+        }
+
+        .secondary-color {
+          color: #ffd404;
+        }
+        .bg-secondary-color {
+          background-color: #ffd404;
+        }
+        .hover\:primary-color:hover {
+          color: #172e8d;
+        }
+
+        .hover\:secondary-color:hover {
+          color: #ffd404;
+        }
+      }
+    </style>
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector(".navbar-scroll");
+        var links = document.querySelectorAll(".nav-link");
+        header.classList.toggle("bg-white", window.scrollY > 0);
+        links.forEach((link) => {
+          link.classList.toggle("text-black", window.scrollY > 0);
+          link.classList.toggle("text-gray-700", window.scrollY < 0);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <section class="sticky top-0 z-50 bg-transparent navbar-scroll">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6">
+        <div class="relative pt-3 pb-12 sm:pb-3">
+          <nav
+            class="relative flex items-center justify-between sm:h-10 md:justify-center"
+            aria-label="Global"
+          >
+            <div
+              class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
+            >
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#"
+                  ><span class="sr-only">Company Name</span>
+                  <img
+                    class="w-auto h-8 sm:h-10"
+                    src="https://www.svgrepo.com/show/448244/pack.svg"
+                    loading="lazy"
+                    width="202"
+                    height="40"
+                  />
+                </a>
+                <div class="flex items-center -mr-2 md:hidden">
+                  <button
+                    class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:flex md:space-x-10 list-none">
+              <li>
+                <a
+                  href="/"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target=""
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./coursework.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target=""
+                  >Coursework</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./dissertation.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >Dissertation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./essay.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >Essay</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./thesis.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >Thesis</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >About Us</a
+                >
+              </li>
+            </div>
+            <div
+              class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 gap-2"
+            >
+              <div class="inline-flex rounded-full">
+                <button
+                  onclick="window.location.href = './contact.html';"
+                  class="inline-flex mr-2 items-center px-4 py-2 text-base text-white bg-blue-800 border border-transparent rounded-full cursor-pointer font-base transition duration-300 ease-in-out hover:bg-black"
+                >
+                  Contact Us
+                </button>
+                <button
+                  onclick="window.location.href = './order-now.html';"
+                  class="inline-flex items-center px-4 py-2 text-base bg-yellow-400 text-white border border-transparent rounded-full cursor-pointer font-base transition duration-300 ease-in-out hover:bg-blue-800"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- Terms with Banner Section -->
+    <section class="relative -mt-20">
+      <div class="mx-auto relative">
+        <div
+          class="bg-cover bg-center text-center overflow-hidden"
+          style="
+            min-height: 400px;
+            background-image: url('https://img.freepik.com/free-photo/close-up-pen-workplace_1160-335.jpg?t=st=1738047805~exp=1738051405~hmac=1c300f5f9463b97fc04ff8dfaa980aaf99762968ac2d63079d628d09f8eedc64&w=900');
+            opacity: 0.8;
+          "
+          title="Woman holding a mug"
+        ></div>
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal"
+          >
+            <div class="bg-white relative top-0 -mt-40 p-5 sm:p-10">
+              <h1
+                href="#"
+                class="primary-color font-bold text-4xl mb-10 text-center"
+              >
+                Terms & Conditions
+              </h1>
+
+              <h3 class="text-3xl font-bold mb-2">#1. Refund Policy</h3>
+              <p class="text-base leading-6 mb-2">
+                We work hard to make sure our services satisfy our clients. Here
+                is our refund policy; nevertheless, if you’re not happy:
+              </p>
+              <h2 class="text-lg font-bold mb-2 primary-color">
+                Eligibility for Refunds
+              </h2>
+              <ul class="list-disc ml-8 mb-2">
+                <li class="list-item text-base leading-6">
+                  Only in the scenario that the final delivery does not meet the
+                  requirements or quality criteria.
+                </li>
+                <li class="text-base leading-6">
+                  Within seven days of receiving the finished work, requests
+                  must be made.
+                </li>
+              </ul>
+
+              <h2 class="text-lg font-bold mb-2 primary-color">
+                Non-Refundable Scenarios
+              </h2>
+              <ul class="list-disc ml-8 mb-2">
+                <li class="list-item text-base leading-6">
+                  No reimbursements for work that the client has already
+                  authorised or utilised.
+                </li>
+                <li class="text-base leading-6">
+                  Refunds will not be granted for requirements that are changed
+                  after the purchase is finalised.
+                </li>
+              </ul>
+              <h2 class="text-lg font-bold mb-2 primary-color">
+                Partial Refunds
+              </h2>
+              <ul class="list-disc ml-8 mb-2">
+                <li class="list-item text-base leading-6">
+                  Only the non-compliant area of the work is eligible for
+                  reimbursement if the rest satisfies the criteria.
+                </li>
+              </ul>
+              <h2 class="text-lg font-bold mb-2 primary-color">Process</h2>
+              <ul class="list-disc ml-8 mb-4">
+                <li class="list-item text-base leading-6">
+                  Our quality assurance team reviews refund requests on an
+                  individual basis.
+                </li>
+                <li class="text-base leading-6">
+                  Refunds that are approved will be processed in 7-10 business
+                  days.
+                </li>
+              </ul>
+              <h3 class="text-3xl font-bold mb-2">#2. Service Agreement</h3>
+              <p class="text-base leading-6 mb-2">
+                By placing an order, the customer commits to giving precise
+                specifications and due dates. Our services are meant for
+                editing, proofreading, and help.
+              </p>
+              <h2 class="text-lg font-bold mb-2 primary-color">
+                Delivery Terms
+              </h2>
+              <ul class="list-disc ml-8 mb-2">
+                <li class="list-item text-base leading-6">
+                  All deadlines are agreed upon by both parties; we are not
+                  liable for delays brought on by incomplete or delayed
+                  information.
+                </li>
+              </ul>
+              <h2 class="text-lg font-bold mb-2 primary-color">Revisions</h2>
+              <ul class="list-disc ml-8 mb-2">
+                <li class="list-item text-base leading-6">
+                  If the revisions follow the original guidelines, they are free
+                  of charge within 14 days of delivery.
+                </li>
+                <li class="list-item text-base leading-6">
+                  Additional fees may apply for revisions brought about by
+                  modifications to the original specifications.
+                </li>
+              </ul>
+              <h2 class="text-lg font-bold mb-2 primary-color">
+                Confidentiality
+              </h2>
+              <ul class="list-disc ml-8 mb-2">
+                <li class="list-item text-base leading-6">
+                  At our platform, no information or document of the client is
+                  ever shared with outside parties and is kept securely.
+                </li>
+                <li class="list-item text-base leading-6">
+                  Plagiarism and Originality.
+                </li>
+                <li class="list-item text-base leading-6">
+                  Although we guarantee unique, plagiarism-free content, the
+                  client is ultimately in charge of its ethical use.
+                </li>
+              </ul>
+              <h2 class="text-lg font-bold mb-2 primary-color">
+                Cancellation Policy
+              </h2>
+              <ul class="list-disc ml-8 mb-6">
+                <li class="list-item text-base leading-6">
+                  If an order is cancelled within 24 hours of order placement,
+                  reimbursement may be possible.
+                </li>
+                <li class="list-item text-base leading-6">
+                  Order cancellation is not possible when the work has started.
+                </li>
+              </ul>
+              <h3 class="text-3xl font-bold mb-2">
+                #3. 100% Happiness Guaranteed
+              </h3>
+              <p class="text-base leading-6 mb-2">
+                Our goal is for you to be entirely satisfied with the service we
+                offer. Although we appreciate praise for our efforts, we gained
+                the most significant knowledge from your constructive criticism.
+              </p>
+
+              <h2 class="text-lg font-bold mb-4 text-black">
+                Our Guiding Principle
+              </h2>
+              <p class="text-base leading-6 mb-4">
+                <span class="font-bold">Personal Contact:</span> Your inquiries
+                and comments will always be answered. We’ll speak with you to
+                resolve any issues if you’re not entirely happy.
+              </p>
+              <p class="text-base leading-6 mb-4">
+                <span class="font-bold">Sincerity:</span> Providing excellent
+                service is essential to us. We’ll go above and beyond to make
+                you happy if you’re not.
+              </p>
+              <p class="text-base leading-6 mb-4">
+                <span class="font-bold">Speed:</span> We’ll contact you as soon
+                as we have your input because we understand that you have
+                deadlines to meet. Our goal is to solve issues as soon as
+                feasible.
+              </p>
+              <p class="text-base leading-6 mb-4">
+                <span class="font-bold">Compliant Catering:</span> There is
+                never any doubt or denial that your complaint is invalid. We’ll
+                get in touch with you to determine the best course of action,
+                and our team will try again and again to meet your requirements
+                and satisfy you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+      <div
+        class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+      >
+        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="sm:col-span-2">
+            <a
+              href="/"
+              aria-label="Go home"
+              title="Company"
+              class="inline-flex items-center"
+            >
+              <svg
+                class="w-8 text-deep-purple-accent-400"
+                viewBox="0 0 24 24"
+                stroke-linejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke="currentColor"
+                fill="none"
+              >
+                <rect x="3" y="1" width="7" height="12"></rect>
+                <rect x="3" y="17" width="7" height="6"></rect>
+                <rect x="14" y="1" width="7" height="6"></rect>
+                <rect x="14" y="11" width="7" height="12"></rect>
+              </svg>
+              <span
+                class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
+                >Company</span
+              >
+            </a>
+            <div class="mt-6 lg:max-w-sm">
+              <p class="text-sm text-gray-800">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+              <p class="mt-4 text-sm text-gray-800">
+                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-2 text-sm">
+            <p class="text-base font-bold tracking-wide text-gray-900">
+              Contacts
+            </p>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Phone:</p>
+              <a
+                href="tel:850-123-5021"
+                aria-label="Our phone"
+                title="Our phone"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                >850-123-5021</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Email:</p>
+              <a
+                href="mailto:info@lorem.mail"
+                aria-label="Our email"
+                title="Our email"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                >info@lorem.mail</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Address:</p>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Our address"
+                title="Our address"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                312 Lovely Street, NY
+              </a>
+            </div>
+          </div>
+          <div>
+            <span class="text-base font-bold tracking-wide text-gray-900"
+              >Quick Links</span
+            >
+            <div class="flex flex-col mt-1 space-y-2">
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Home</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Coursework</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Dissertation</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Essay</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Thesis</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col-reverse justify-between pt-5 pb-10 border-t-2 border-black lg:flex-row"
+        >
+          <p class="text-sm text-gray-600">
+            © Copyright 2025 Lorem Inc. All rights reserved.
+          </p>
+          <ul
+            class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+          >
+            <li>
+              <a
+                href="/privacy-policy.html"
+                target="_blank"
+                class="text-sm text-gray-600 transition-colors duration-300 hover:text-blue-800"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="/terms.html"
+                class="text-sm text-gray-600 transition-colors duration-300 hover:text-blue-800"
+                >Terms &amp; Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

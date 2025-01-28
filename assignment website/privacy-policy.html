@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment Website-Privacy Policy</title>
+    <style>
+      @layer utilities {
+        .primary-color {
+          color: #172e8d;
+        }
+        .bg-primary-color {
+          background-color: #172e8d;
+        }
+
+        .secondary-color {
+          color: #ffd404;
+        }
+        .bg-secondary-color {
+          background-color: #ffd404;
+        }
+        .hover\:primary-color:hover {
+          color: #172e8d;
+        }
+
+        .hover\:secondary-color:hover {
+          color: #ffd404;
+        }
+      }
+    </style>
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector(".navbar-scroll");
+        var links = document.querySelectorAll(".nav-link");
+        header.classList.toggle("bg-white", window.scrollY > 0);
+        links.forEach((link) => {
+          link.classList.toggle("text-black", window.scrollY > 0);
+          link.classList.toggle("text-white", window.scrollY < 0);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <section class="sticky top-0 z-50 bg-transparent navbar-scroll">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6">
+        <div class="relative pt-3 pb-12 sm:pb-3">
+          <nav
+            class="relative flex items-center justify-between sm:h-10 md:justify-center"
+            aria-label="Global"
+          >
+            <div
+              class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
+            >
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#"
+                  ><span class="sr-only">Company Name</span>
+                  <img
+                    class="w-auto h-8 sm:h-10"
+                    src="https://www.svgrepo.com/show/448244/pack.svg"
+                    loading="lazy"
+                    width="202"
+                    height="40"
+                  />
+                </a>
+                <div class="flex items-center -mr-2 md:hidden">
+                  <button
+                    class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:flex md:space-x-10 list-none">
+              <li>
+                <a
+                  href="/"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target=""
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./coursework.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target=""
+                  >Coursework</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./dissertation.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >Dissertation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./essay.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >Essay</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./thesis.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >Thesis</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  class="text-base font-normal text-gray-700 list-none hover:text-blue-800 relative group nav-link"
+                  target="_blank"
+                  >About Us</a
+                >
+              </li>
+            </div>
+            <div
+              class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 gap-2"
+            >
+              <div class="inline-flex rounded-full">
+                <button
+                  onclick="window.location.href = './contact.html';"
+                  class="inline-flex mr-2 items-center px-4 py-2 text-base text-white bg-blue-800 border border-transparent rounded-full cursor-pointer font-base transition duration-300 ease-in-out hover:bg-black"
+                >
+                  Contact Us
+                </button>
+                <button
+                  onclick="window.location.href = './order-now.html';"
+                  class="inline-flex items-center px-4 py-2 text-base bg-yellow-400 text-white border border-transparent rounded-full cursor-pointer font-base transition duration-300 ease-in-out hover:bg-blue-800"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- Terms with Banner Section -->
+    <section class="relative -mt-20">
+      <div class="mx-auto relative">
+        <div
+          class="bg-cover bg-center text-center overflow-hidden"
+          style="
+            min-height: 400px;
+            background-image: url('https://img.freepik.com/free-vector/gradient-ssl-illustration_23-2149251019.jpg?t=st=1738056101~exp=1738059701~hmac=6f3cf98b008af2dc238d2d1c3044d8350a685b0a039a0306ea8649776a7c85d4&w=740');
+            opacity: 0.8;
+          "
+          title="Woman holding a mug"
+        ></div>
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal"
+          >
+            <div class="bg-white relative top-0 -mt-40 p-5 sm:p-10">
+              <h1
+                href="#"
+                class="primary-color font-bold text-4xl mb-10 text-center"
+              >
+                Refund Policy
+              </h1>
+              <p class="text-base leading-6 mb-2">
+                For many years, Precise Assignments has been providing their top
+                editing and proofreading services to their clients by maintain
+                their quality standards.
+              </p>
+              <p class="text-base leading-6 mb-2">
+                The potential factor of choosing The Precise Help is that we
+                don’t compromise on the quality at any level and if for any
+                reason, our client faces dissatisfaction with our quality of
+                work then refund can be processed.
+              </p>
+              <p class="text-base leading-6 mb-2">
+                Our policy of refund provides a chance to our client to request
+                for the effective refund, upon not meeting the expectation.
+                However, Precise Assignments hold very rare cases of refund in
+                comparison with greater satisfaction rate.
+              </p>
+              <p class="text-base leading-6 mb-4">
+                For refund to be processed there are some set of conditions that
+                should be met:
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  The request of refund should be made at our customer support
+                  email within 14 days of order delivery.
+                </span>
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  Client must provide valid reasoning and issues with evidence
+                  about why they are entitled to that refund, that too should be
+                  within 14 days of deliver.
+                </span>
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  If client is not fully satisfied with the work, you have a
+                  chance to request free revision, upon action we assign the
+                  order to another expert to get the job done to meet client’s
+                  expectation.
+                </span>
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  Client will be provided with complete refund if they cancel
+                  the order before its assigning to any our expert. In vice
+                  versa, the refund will not be processed if request has been
+                  made after it is assigned to our expert.
+                </span>
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  Client cannot place refund request or cancel if the order has
+                  been delivered or completed. Only considerable factor in this
+                  case is the quality issue and late delivery.
+                </span>
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  If client has mistakenly paid twice for the same order,
+                  immediately reach out to our support team to avoid challenges
+                  like its assigning to expert.
+                </span>
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  If any case charge is done, the client will be marked as
+                  fraudulent on our system and strict actions will be taken
+                  against this agreement breach.
+                </span>
+              </p>
+              <p class="ml-2 mb-2">
+                <span class="">
+                  <svg
+                    class="w-5 h-5 primary-color dark:text-white inline"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  The processing time for the refund is 14 business days.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+      <div
+        class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+      >
+        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="sm:col-span-2">
+            <a
+              href="/"
+              aria-label="Go home"
+              title="Company"
+              class="inline-flex items-center"
+            >
+              <svg
+                class="w-8 text-deep-purple-accent-400"
+                viewBox="0 0 24 24"
+                stroke-linejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke="currentColor"
+                fill="none"
+              >
+                <rect x="3" y="1" width="7" height="12"></rect>
+                <rect x="3" y="17" width="7" height="6"></rect>
+                <rect x="14" y="1" width="7" height="6"></rect>
+                <rect x="14" y="11" width="7" height="12"></rect>
+              </svg>
+              <span
+                class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
+                >Company</span
+              >
+            </a>
+            <div class="mt-6 lg:max-w-sm">
+              <p class="text-sm text-gray-800">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+              <p class="mt-4 text-sm text-gray-800">
+                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-2 text-sm">
+            <p class="text-base font-bold tracking-wide text-gray-900">
+              Contacts
+            </p>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Phone:</p>
+              <a
+                href="tel:850-123-5021"
+                aria-label="Our phone"
+                title="Our phone"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                >850-123-5021</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Email:</p>
+              <a
+                href="mailto:info@lorem.mail"
+                aria-label="Our email"
+                title="Our email"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                >info@lorem.mail</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Address:</p>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Our address"
+                title="Our address"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                312 Lovely Street, NY
+              </a>
+            </div>
+          </div>
+          <div>
+            <span class="text-base font-bold tracking-wide text-gray-900"
+              >Quick Links</span
+            >
+            <div class="flex flex-col mt-1 space-y-2">
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Home</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Coursework</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Dissertation</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Essay</a
+              >
+              <a
+                href="/"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Thesis</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col-reverse justify-between pt-5 pb-10 border-t-2 border-black lg:flex-row"
+        >
+          <p class="text-sm text-gray-600">
+            © Copyright 2025 Lorem Inc. All rights reserved.
+          </p>
+          <ul
+            class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+          >
+            <li>
+              <a
+                href="/privacy-policy.html"
+                target="_blank"
+                class="text-sm text-gray-600 transition-colors duration-300 hover:text-blue-800"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="/terms.html"
+                class="text-sm text-gray-600 transition-colors duration-300 hover:text-blue-800"
+                >Terms &amp; Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

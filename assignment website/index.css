@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Graphik', sans-serif;
+    font-weight: 200;
+}
+    /* Creating the growing underline effect */
+    .group:hover::before {
+        transform: scaleX(1);
+        transform-origin: center;
+    }
+
+    .group::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #172e8d; /* blue-800 equivalent */
+        bottom: -4px;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .active-nav-link{
+        color: #172e8d !important;
+        border-bottom: 2px solid #172e8d;
+        padding-bottom: 2px;
+        
+    }
+    
+
+
+
+    @keyframes slides {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      
+      
