@@ -1,11 +1,1009 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment Website-Thesis</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      @layer utilities {
+        .primary-color {
+          color: #172e8d;
+        }
+        .bg-primary-color {
+          background-color: #172e8d;
+        }
+
+        .secondary-color {
+          color: #ffd404;
+        }
+        .bg-secondary-color {
+          background-color: #ffd404;
+        }
+        .hover\:primary-color:hover {
+          color: #172e8d;
+        }
+
+        .hover\:secondary-color:hover {
+          color: #ffd404;
+        }
+      }
+      .clip-path-blob {
+        clip-path: url(#blob);
+      }
+    </style>
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector(".navbar-scroll");
+        header.classList.toggle("bg-white", window.scrollY > 0);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <section class="z-50 sticky top-0 bg-transparent navbar-scroll">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6">
+        <div class="relative pt-3 pb-12 sm:pb-3">
+          <nav
+            class="relative flex items-center justify-between sm:h-10 md:justify-center"
+            aria-label="Global"
+          >
+            <div
+              class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
+            >
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#"
+                  ><span class="sr-only">Company Name</span>
+                  <img
+                    class="w-auto h-8 sm:h-10"
+                    src="https://www.svgrepo.com/show/448244/pack.svg"
+                    loading="lazy"
+                    width="202"
+                    height="40"
+                  />
+                </a>
+                <div class="flex items-center -mr-2 md:hidden">
+                  <button
+                    class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-50"
+                    type="button"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:flex md:space-x-10 list-none">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-base font-normal text-gray-500 list-none hover:text-blue-800 relative group"
+                  target=""
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./coursework.html"
+                  class="text-base font-normal text-gray-500 list-none hover:text-blue-800 relative group"
+                  target=""
+                  >Coursework
+                </a>
+              </li>
+              <li>
+                <a
+                  href="dissertation.html"
+                  class="text-base font-normal text-gray-500 list-none hover:text-blue-800 relative group"
+                  target=""
+                  >Dissertation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="essay.html"
+                  class="text-base font-normal text-gray-500 list-none hover:text-blue-800 relative group"
+                  target=""
+                  >Essay
+                </a>
+              </li>
+              <li>
+                <a
+                  href="thesis.html"
+                  class="text-base font-normal list-none active-nav-link"
+                  target=""
+                  >Thesis
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-base font-normal text-gray-500 list-none hover:text-blue-800 relative group"
+                  target=""
+                  >About Us
+                </a>
+              </li>
+            </div>
+            <div
+              class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0 gap-2"
+            >
+              <div class="inline-flex rounded-full">
+                <button
+                  onclick="window.location.href='contact.html'"
+                  class="inline-flex mr-2 items-center px-4 py-2 text-base text-white bg-blue-800 border border-transparent rounded-full cursor-pointer font-base transition duration-300 ease-in-out hover:bg-black"
+                >
+                  Contact Us
+                </button>
+                <button
+                  onclick="window.location.href='order-now.html'"
+                  class="inline-flex items-center px-4 py-2 text-base bg-yellow-400 text-white border border-transparent rounded-full cursor-pointer font-base transition duration-300 ease-in-out hover:bg-blue-800"
+                >
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Section -->
+    <section class="relatve">
+      <div
+        class="mx-auto w-full max-w-7xl px-5 py-8 md:px-10 md:pt-24 lg:pt-32"
+      >
+        <div class="mx-auto mb-6 w-full max-w-3xl text-center md:mb-8 lg:mb-10">
+          <h1 class="mb-4 text-4xl font-semibold md:text-4xl">
+            Employ the Best Professionals<span
+              class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white"
+              >for Your Reports/Thesis</span
+            >
+          </h1>
+          <p class="mx-auto mb-5 max-w-4xl text-gray-700 lg:mb-2">
+            Most students find it difficult to makean appropriate research
+            proposal because of its complexity. The main reason why students are
+            under so much pressure at this academic level is because they don’t
+            want to make mistakes or forget anything important.
+          </p>
+          <p class="mx-auto max-w-4xl text-gray-700 lg:mb-4">
+            As time passes and the stress increases, students become confused.
+            If you want to master your research report, assignments or proposal
+            editing and proofreading service, get help and achieve your goal
+            instead of waiting until the last minute.
+          </p>
+          <!-- Button Wrap -->
+          <div class="flex justify-center">
+            <a
+              href="#"
+              class="mr-5 inline-block rounded-xl bg-black px-8 py-4 text-center font-semibold text-white [box-shadow:rgb(23,_46,_141)_6px_6px] md:mr-6"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- BG Images -->
+      <img
+        src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg"
+        alt=""
+        class="absolute bottom-0 left-0 right-auto top-auto -z-10 inline-block md:bottom-1/2 md:left-0 md:right-auto md:top-auto"
+      />
+      <img
+        src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905ba1538296b3f50a905e_pattern-2.svg"
+        alt=""
+        class="absolute bottom-auto left-auto right-0 top-0 -z-10 hidden sm:inline-block"
+      />
+    </section>
+    <!-- About Us Section -->
+    <section>
+      <div
+        class="w-full lg:max-h-[650px] m-auto flex items-center justify-cetner py-10 dark:bg-gray-900"
+      >
+        <div
+          class="w-full h-full flex flex-col justify-center items-center sm:px-4 px-2"
+        >
+          <!--  -->
+          <div
+            class="lg:w-[90%] w-full mx-auto flex flex-col lg:gap-6 lg:flex-row items-center justify-center"
+          >
+            <div class="relative">
+              <img
+                class="absolute z-20 lg:left-[2rem] -top-4 left-[1rem] lg:w-[8rem] lg:h-[8rem] sm:w-[6rem] sm:h-[6rem] w-[3rem] h-[3rem] rounded-full"
+                src="https://img.freepik.com/premium-vector/write-essay-content-author-work-table-copywriter-text-editor-flat-cartoon-graphic-article_101884-1925.jpg"
+                alt="Side Image"
+              />
+
+              <img
+                class="absolute z-20 lg:top-[12rem] sm:top-[11rem] top-[5rem] sm:-left-[3rem] -left-[2rem] lg:w-[8rem] lg:h-[8rem] sm:w-[6rem] sm:h-[6rem] w-[3rem] h-[3rem] rounded-full"
+                src="https://img.freepik.com/free-vector/taking-notes-concept-illustration_114360-1114.jpg"
+                alt="Side Image 2"
+              />
+
+              <img
+                class="absolute z-20 lg:top-[23rem] sm:top-[20.5rem] top-[10.5rem] left-[2rem] lg:w-[8rem] lg:h-[8rem] sm:w-[6rem] sm:h-[6rem] w-[3rem] h-[3rem] rounded-full"
+                src="https://img.freepik.com/free-vector/hand-drawn-essay-illustration_23-2150268421.jpg?t=st=1737613071~exp=1737616671~hmac=73cd63499e40936809f4b34979190473918600fee1c9af8d2de50e43455926ad&w=740"
+                alt="Side Image 3"
+              />
+
+              <img
+                class="rounded-full relative object-cover right-0 lg:w-[30rem] lg:h-[30rem] sm:w-[25rem] sm:h-[25rem] w-[12rem] h-[12rem] outline sm:outline-offset-[.60em] outline-offset-[.33em] outline-blue-800"
+                src="https://img.freepik.com/free-photo/young-man-writing-study-session_23-2149265763.jpg"
+                alt="About us"
+              />
+            </div>
+
+            <div
+              class="lg:w-[40%] p-4 w-full h-full shadow-xl shadow-blue-200/95 flex flex-col sm:px-6 px-4 rounded-xl"
+            >
+              <h2
+                class="justify-start flex-start text-2xl text-left primary-color font-bold py-1 md:mt-0 mt-10"
+              >
+                Who We <span class="secondary-color font-bold">Are ?</span>
+              </h2>
+              <p
+                class="md:text-5xl text-4xl text-left primary-color font-bold my-5"
+              >
+                About Us
+              </p>
+              <p
+                class="text-base mt-2 text-justify sm:px-2 text-gray-700 dark:text-gray-300 mb-2"
+              >
+                We are one of the professional and well-known service providers
+                in the UK who not only help in editing and proofreading but also
+                show availability 24/7 to answer concerns and resolve them. Our
+                team of very skilled proofreaders is enthusiastic about
+                proofreading a wide range of creative documents in addition to
+                other kinds of documents, such as literature reviews and
+                research.
+              </p>
+              <p
+                class="text-base mt-2 text-justify sm:px-2 text-gray-700 dark:text-gray-300"
+              >
+                Regardless of the turnaround time you select, we are dedicated
+                to quality and have outstanding time management abilities that
+                guarantee to meet your deadline, whether it be within a few
+                hours or seven days. We may either thoroughly edit your work to
+                help you with the workflow, word choice, clarity-check, and
+                structure, or we can just go over it and fix typos and grammar
+                errors.
+              </p>
+              <ul class="flex flex-col mt-4 ml-4 mb-4">
+                <li class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-blue-800"
+                    viewBox="0 0 20 20"
+                    fill="#172e8d"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586l-3.293-3.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Get your work reviewed by our professionals.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-blue-800"
+                    viewBox="0 0 20 20"
+                    fill="#172e8d"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586l-3.293-3.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-gray-700 dark:text-gray-300">
+                    Don't get stressed due to your tight deadlines anymore.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Services Section -->
+    <section class="my-16">
+      <div dir="rtl ">
+        <div class="bg-gradient-to-b from-blue-200 via-gray-50 to-blue-100">
+          <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-black pt-12">Our Services</h2>
+            <p class="text-gray-700 mt-2">
+              We can provide you with excellent editing services for your
+              academic as well as creative writing projects. We can edit your
+              creative writing in any form of English you like, including
+              formal, casual, American, British, Canadian, and more. You won’t
+              ever miss a deadline when working with us, and you’ll have
+              professionally edited material that you can confidently submit for
+              publication.
+            </p>
+          </div>
+          <div
+            class="mx-auto h-full px-4 pb-10 sm:max-w-xl md:max-w-3xl md:px-12 md:pb-10 lg:max-w-screen-xl mt-4"
+          >
+            <div
+              class="flex flex-col items-center justify-center lg:flex-row md:gap-6 gap-8"
+            >
+              <div class="relative lg:block lg:w-1/2 p-6 mt-4">
+                <div class="mb-3">
+                  <h3 class="text-left p-2 text-black text-3xl font-bold">
+                    Coursework
+                  </h3>
+                  <p class="px-4">
+                    Coursework might seem very dry for some students, which is
+                    also time-taking to be completed. Precise Assignments helps
+                    students complete their coursework without difficulties at a
+                    given timeframe to let them succeed.
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h3 class="text-left p-2 text-black text-3xl font-bold">
+                    Dissertation
+                  </h3>
+                  <p class="px-4">
+                    A dissertation is a lengthy report that needs to be
+                    completed by every student at the end of their semester.
+                    However, it might be complex sometimes but do not worry, as
+                    we are globally available to help you.
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h3 class="text-left p-2 text-black text-3xl font-bold">
+                    Essay
+                  </h3>
+                  <p class="px-4">
+                    Essays are the trickiest tasks to be done for academics,
+                    which might trigger students at times. We can help students
+                    follow the proper structure of essays while meeting the
+                    brief requirements.
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <h3 class="text-left p-2 text-black text-3xl font-bold">
+                    Thesis
+                  </h3>
+                  <p class="px-4">
+                    You don’t need to worry about your longer project reports
+                    because we are providing our most prominent services at
+                    affordable rates so you can get the benefit of it and ace
+                    your grades in your semester.
+                  </p>
+                </div>
+              </div>
+              <div class="relative lg:block lg:w-1/2">
+                <!-- Four divs in a grid 2cols per row -->
+                <div class="grid lg:grid-cols-2 gap-x-6 gap-y-6">
+                  <div
+                    style="
+                      background-image: url('./assets/div-3.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    class="min-h-[270px] rounded-lg"
+                  >
+                    <h2 class="pt-6 px-6 text-black text-lg font-bold">
+                      Network Of Finest Writer
+                    </h2>
+                    <p class="px-6 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Harum modi, in sint labore nostrum quos debitis?
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      background-image: url('./assets/div-2.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    class="min-h-[270px] rounded-lg"
+                  >
+                    <h2
+                      class="pt-6 px-6 text-black lg:text-right text-lg font-bold"
+                    >
+                      24/7 Services
+                    </h2>
+                    <p class="px-6 mt-2 text-right">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Harum modi, in sint labore nostrum quos debitis?
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      background-image: url('./assets/div-1.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    class="min-h-[270px] rounded-lg"
+                  >
+                    <h2 class="pt-6 px-6 text-black text-lg font-bold">
+                      Team of Editing
+                    </h2>
+                    <p class="px-6 mt-12">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Harum modi, in sint labore nostrum quos debitis?
+                    </p>
+                  </div>
+
+                  <div
+                    style="
+                      background-image: url('./assets//div-4.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    class="min-h-[270px] rounded-lg"
+                  >
+                    <h2
+                      class="pt-6 px-6 text-black lg:text-right text-lg font-bold float-right w-2/3"
+                    >
+                      Total Quality Management
+                    </h2>
+                    <p class="px-6 mt-6 text-right float-right">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Harum modi, in sint labore nostrum quos debitis?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subjects We Offer Section -->
+    <section>
+      <div
+        class="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-16 bg-blue-100 dark:via-gray-800 dark:to-gray-900"
+      >
+        <div class="mx-auto w-full max-w-3xl text-center">
+          <h2 class="text-4xl font-extrabold primary-color md:text-5xl">
+            Subjects We Offer
+          </h2>
+          <div class="mx-auto mb-8 mt-4 max-w-[528px] md:mb-12 lg:mb-16">
+            <p class="text-lg text-blue-700 dark:text-gray-300"></p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 md:grid-cols-4 lg:gap-12"
+        >
+          <!-- Card 1 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-2 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img
+                src="assets/svgs/business.svg"
+                alt="Icon"
+                class="h-8"
+                fill="#172e8d"
+              />
+            </div>
+            <p class="mb-4 text-xl font-semibold primary-color dark:text-white">
+              Business Management
+            </p>
+            <p class="text-black">
+              Refine your business essays and ace assignments with Precise
+              Assignments' services.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-2 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img
+                src="assets/svgs/computer-science.svg"
+                alt="Icon"
+                class="h-8"
+              />
+            </div>
+            <p class="mb-4 text-xl font-semibold primary-color">
+              Computer Science
+            </p>
+            <p class="text-black">
+              Simplify technical writing and perfect your technical assignments
+              with Precise Assignments.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img src="assets/svgs/engineering.svg" alt="Icon" class="h-8" />
+            </div>
+            <p class="mb-4 text-xl font-semibold primary-color">Engineering</p>
+            <p class="text-blacks">
+              Get professionally written engineering essays and precise
+              proofreading with Precise Assignments.
+            </p>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img
+                src="assets/svgs/finance-and-accounts.svg"
+                alt="Icon"
+                class="h-8"
+              />
+            </div>
+            <p class="mb-4 text-xl font-semibold primary-color">
+              Finance & Accounting
+            </p>
+            <p class="text-black">
+              Polish your finance reports and accounting essays with our expert
+              assistance at Precise Assignments.
+            </p>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img src="assets/svgs/law.svg" alt="Icon" class="h-8" />
+            </div>
+            <p class="mb-4 text-xl font-semibold primary-color">Law</p>
+            <p class="text-black">
+              Ensure your legal assignments and case studies are flawless with
+              Precise Assignments' academic services.
+            </p>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img src="assets/svgs/medical.svg" alt="Icon" class="h-8" />
+            </div>
+            <p class="mb-4 text-xl font-semibold primary-color">
+              Medical / Nursing
+            </p>
+            <p class="text-black">
+              Perfect your medical essays, nursing assignments, and research
+              papers with Precise Assignments.
+            </p>
+          </div>
+          <!-- Card 7 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img
+                src="assets/svgs/social-science.svg"
+                alt="Icon"
+                class="h-8"
+              />
+            </div>
+            <p class="mb-4 text-xl font-semibold primary-color">
+              Social Sciences
+            </p>
+            <p class="text-black">
+              Make your social sciences papers shine with expert academic help
+              from Precise Assignments.
+            </p>
+          </div>
+          <!-- Card 8 -->
+          <div
+            class="relative mb-8 flex flex-col rounded-2xl bg-white p-8 shadow-lg dark:border-gray-600 dark:bg-gray-800 lg:mb-2"
+          >
+            <div
+              class="absolute -top-8 right-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-color shadow-md dark:border-gray-500 dark:bg-gray-700 lg:right-8"
+            >
+              <img src="assets/svgs/english.svg" alt="Icon" class="h-8" />
+            </div>
+            <p class="mb-2 text-xl font-semibold primary-color">
+              English Literature
+            </p>
+            <p class="text-black">
+              Craft compelling essays and analyze texts perfectly with Precise
+              Assignments' academic services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get in Touch Section -->
+    <section
+      class="bg-gradient-to-b from-blue-500 via-gray-50 to-blue-100 mt-10 mx-20"
+    >
+      <h2
+        class="pt-10 text-center mx-auto max-w-2xl text-3xl font-bold uppercase tracking-wide sm:text-5xl"
+      >
+        Get in <span class="primary-color font-bold italic">touch with us</span>
+      </h2>
+      <div class="flex flex-wrap justify-center items-center">
+        <div class="w-1/3 px-6 pt-3 pb-6 justify-end right-0 relative">
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute inset-0 w-full h-full pl-3"
+          >
+            <path
+              fill="#fff"
+              d="M40.1,-63.2C52.1,-55.6,62.1,-44.1,69.2,-30.6C76.3,-17.1,80.5,-1.6,77.5,11.8C74.5,25.2,64.3,36.5,53.2,47.3C42.1,58.1,30.1,68.4,16.3,73.8C2.5,79.2,-13.1,79.7,-26.5,74.7C-39.9,69.7,-51.1,59.2,-60.5,47.3C-69.9,35.4,-77.5,22.1,-80.9,7.2C-84.3,-7.7,-83.5,-24.1,-76.7,-37.2C-69.9,-50.3,-57.1,-60.1,-43.2,-66.9C-29.3,-73.7,-14.7,-77.5,0.3,-77.9C15.3,-78.4,30.6,-75.5,40.1,-63.2Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+
+          <img
+            src="assets/get-in-touch.png"
+            class="object-contain h-[350px] pl-32 clip-path-blob"
+            alt=""
+          />
+        </div>
+
+        <div class="mx-auto pt-3 pb-6 sm:px-6 lg:px-8 w-2/3">
+          <div
+            class="relative overflow-hidden px-6 py-3 text-center sm:rounded-3xl sm:px-8"
+          >
+            <p class="mt-6 max-w-xl text-lg leading-8 text-gray-600">
+              We cover all time zones and are available around the clock because
+              our editors are from all around the English-speaking world. We are
+              confident that we can handle any editing requirements you may have
+              because our proofreaders are experts with extensive editing
+              expertise.
+            </p>
+            <div class="mt-8 flex items-center -space-x-2 overflow-hidden">
+              <img
+                class="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                src="https://randomuser.me/api/portraits/men/24.jpg"
+                alt=""
+              />
+              <img
+                class="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                src="https://randomuser.me/api/portraits/women/29.jpg"
+                alt=""
+              />
+              <img
+                class="relative z-10 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                src="https://randomuser.me/api/portraits/women/12.jpg"
+                alt=""
+              />
+              <img
+                class="relative z-0 inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                src="https://randomuser.me/api/portraits/men/1.jpg"
+                alt=""
+              />
+              <span class="!ml-2 font-bold italic primary-color"
+                >Join others and avail our services now</span
+              >
+            </div>
+            <div class="mt-12 flex items-center gap-x-6">
+              <button
+                type="button"
+                class="text-md relative inline-flex items-center gap-x-2 rounded-lg bg-blue-800 px-6 py-4 font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+              >
+                <span
+                  class="absolute -top-5 left-0 w-full text-left text-xs italic primary-color"
+                  >No Obligations</span
+                >Get Started
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  class="-mr-0.5 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <svg
+              viewBox="0 0 1024 1024"
+              class="absolute left-1/2 top-1/2 -z-10 h-[72rem] w-[72rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+              aria-hidden="true"
+            >
+              <circle
+                cx="512"
+                cy="512"
+                r="512"
+                fill="url(#primary-color-gradient)"
+                fill-opacity="1.0"
+              ></circle>
+              <defs>
+                <radialGradient id="primary-color-gradient">
+                  <stop stop-color="#172e8d"></stop>
+                  <stop offset="1" stop-color="#172e8d" stop-opacity="0"></stop>
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Process Section -->
+    <section>
+      <div class="max-w-3xl mx-auto text-center mt-10">
+        <h1
+          class="text-3xl font-bold text-gray-900 leading-tight mb-2 pb-2 relative"
+        >
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-800"
+            >STEPS</span
+          >
+          <span
+            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-800"
+          ></span>
+        </h1>
+        <p class="text-xl text-black font-bold leading-6 uppercase">
+          <span class="text-gray-700">How Our</span> Process Works
+        </p>
+      </div>
+    </section>
+    <section class="relative overflow-hidden">
+      <div class="md:mt-0 pb-6 sm:pb-12 lg:pb-24 overflow-hidden">
+        <div class="px-4 mx-auto max-w-5xl sm:px-6 lg:px-8 relative">
+          <div class="relative mt-12 lg:mt-10">
+            <div
+              class="absolute inset-x-0 hidden xl:px-44 top-2 md:block md:px-20 lg:px-28"
+            >
+              <svg
+                class="w-full"
+                xmlns="http://www.w3.org/2000/svg"
+                width="875"
+                height="48"
+                viewBox="0 0 875 48"
+                fill="none"
+              >
+                <path
+                  d="M2 29C20.2154 33.6961 38.9915 35.1324 57.6111 37.5555C80.2065 40.496 102.791 43.3231 125.556 44.5555C163.184 46.5927 201.26 45 238.944 45C312.75 45 385.368 30.7371 458.278 20.6666C495.231 15.5627 532.399 11.6429 569.278 6.11109C589.515 3.07551 609.767 2.09927 630.222 1.99998C655.606 1.87676 681.208 1.11809 706.556 2.44442C739.552 4.17096 772.539 6.75565 805.222 11.5C828 14.8064 850.34 20.2233 873 24"
+                  stroke="#172e8d"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                  stroke-dasharray="1 12"
+                />
+              </svg>
+            </div>
+            <div
+              class="relative grid grid-cols-1 text-center gap-y-8 sm:gap-y-10 md:gap-y-12 md:grid-cols-3 gap-x-12"
+            >
+              <div>
+                <div
+                  class="flex items-center justify-center w-20 h-20 mx-auto bg-primary-color dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow"
+                >
+                  <span class="text-xl font-semibold secondary-color">1</span>
+                </div>
+                <h3
+                  class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10"
+                >
+                  Submit Requirements
+                </h3>
+                <p
+                  class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400"
+                >
+                  We will review your document and provide a customised
+                  quote.You can discuss your budget; we offer transparent
+                  pricing that has no hidden costs.Editing and Proofreading
+                  starts.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="flex items-center justify-center w-20 h-20 mx-auto bg-primary-color dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow"
+                >
+                  <span class="text-xl font-semibold secondary-color">2</span>
+                </div>
+                <h3
+                  class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10"
+                >
+                  Fill Out the Form
+                </h3>
+                <p
+                  class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400"
+                >
+                  Our professional editors start modifying your document.We
+                  ensure structure, grammar check, formatting to meet the brief
+                  standards.Delivery and feedback sharing.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="flex items-center justify-center w-20 h-20 mx-auto bg-primary-color dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow"
+                >
+                  <span class="text-xl font-semibold secondary-color">3</span>
+                </div>
+                <h3
+                  class="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10"
+                >
+                  Receive a Quote
+                </h3>
+                <p
+                  class="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400"
+                >
+                  Receive the modified document within the agreed
+                  deadline.Review the edits, and then you may request revisions
+                  if required.Final Delivery.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+      <div
+        class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+      >
+        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="sm:col-span-2">
+            <a
+              href="/"
+              aria-label="Go home"
+              title="Company"
+              class="inline-flex items-center"
+            >
+              <svg
+                class="w-8 text-deep-purple-accent-400"
+                viewBox="0 0 24 24"
+                stroke-linejoin="round"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke="currentColor"
+                fill="none"
+              >
+                <rect x="3" y="1" width="7" height="12"></rect>
+                <rect x="3" y="17" width="7" height="6"></rect>
+                <rect x="14" y="1" width="7" height="6"></rect>
+                <rect x="14" y="11" width="7" height="12"></rect>
+              </svg>
+              <span
+                class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
+                >Company</span
+              >
+            </a>
+            <div class="mt-6 lg:max-w-sm">
+              <p class="text-sm text-gray-800">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+              <p class="mt-4 text-sm text-gray-800">
+                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-2 text-sm">
+            <p class="text-base font-bold tracking-wide text-gray-900">
+              Contacts
+            </p>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Phone:</p>
+              <a
+                href="tel:850-123-5021"
+                aria-label="Our phone"
+                title="Our phone"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                >850-123-5021</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Email:</p>
+              <a
+                href="mailto:info@lorem.mail"
+                aria-label="Our email"
+                title="Our email"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                >info@lorem.mail</a
+              >
+            </div>
+            <div class="flex">
+              <p class="mr-1 text-gray-800">Address:</p>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Our address"
+                title="Our address"
+                class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                312 Lovely Street, NY
+              </a>
+            </div>
+          </div>
+          <div>
+            <span class="text-base font-bold tracking-wide text-gray-900"
+              >Quick Links</span
+            >
+            <div class="flex flex-col mt-1 space-y-2">
+              <a
+                href="index.html"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Home</a
+              >
+              <a
+                href="coursework.html"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Coursework</a
+              >
+              <a
+                href="dissertation.html"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Dissertation</a
+              >
+              <a
+                href="essay.html"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Essay</a
+              >
+              <a
+                href="thesis.html"
+                class="text-gray-500 transition-colors duration-300 hover:text-blue-800"
+                >Thesis</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col-reverse justify-between pt-5 pb-10 border-t-2 border-black lg:flex-row"
+        >
+          <p class="text-sm text-gray-600">
+            © Copyright 2025 Lorem Inc. All rights reserved.
+          </p>
+          <ul
+            class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+          >
+            <li>
+              <a
+                href="/"
+                class="text-sm text-gray-600 transition-colors duration-300 hover:text-blue-800"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="/"
+                class="text-sm text-gray-600 transition-colors duration-300 hover:text-blue-800"
+                >Terms &amp; Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

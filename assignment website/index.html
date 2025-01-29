@@ -30,6 +30,9 @@
         color: #ffd404;
     }
 }
+.clip-path-blob {
+    clip-path: url(#blob);
+  }
   </style>
   <script>
     // on scroll add bg-white to navbar and when we scroll back to top remove bg-white
@@ -134,59 +137,62 @@
             style="clip-path:polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)">
           </div>
         </div>
-        
+        <h1 class="mt-20 text-center text-2xl font-bold tracking-tight text-black sm:text-5xl">
+          <span class="primary-color">Get all the help </span> with
+          <span class="font-bold">Assignments</span>
+        </h1>
 
-        <div class="flex flex-col lg:flex-row justify-center items-center h-[600px] mt-6 px-4">
+        <div class="flex flex-col lg:flex-row justify-center items-center h-[600px] mt-3 px-4">
 
           <div class="text-center lg:text-left lg:w-1/2 lg:pr-12">
-            <h1 class="mt-10 text-5xl font-bold tracking-tight text-black sm:text-6xl">
-              <span class="primary-color">Get all the help </span> with
-              <span class="font-bold">Assignments</span>
-            </h1>
-            <p class="mt-6 text-md leading-8 font-extralight text-black">Elevate Your Productivity With Zynx, Your Personalized Workflow
+            
+            <div class=" lg:mt-2 w-4/5 bg-transparent p-6 rounded-lg shadow-2xl ">
+              <h2 class="text-xl font-semibold text-blue-800 mb-4 text-center">Avail Our Services - Get in touch</h2>
+              <form action="#" method="POST" class="space-y-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                  <input type="text" name="name" id="name" required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                  <input type="email" name="email" id="email" required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300">
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                  <input type="tel" name="phone" id="phone" required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300">
+                </div>
+                <div>
+                  <label for="requirements" class="block text-sm font-medium text-gray-700">Additional Requirements</label>
+                  <textarea name="requirements" id="requirements" rows="3"
+                    class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300"></textarea>
+                </div>
+                <button type="submit"
+                  class="w-full rounded-md bg-blue-800 px-4 py-2 text-md font-bold text-white shadow-sm hover:bg-blue-900 transform hover:translate-x-2">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <!-- <p class="mt-6 text-md leading-8 font-extralight text-black">Elevate Your Productivity With Zynx, Your Personalized Workflow
               Assistant</p>
             <div class="mt-5 flex items-center justify-center lg:justify-start gap-x-6">
               <a href="#"
                 class="rounded-md bg-blue-800 px-6 py-4 text-md font-bold text-white shadow-sm hover:bg-blue-900 transform hover:-translate-x-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
                 rel="noreferrer">Get Started →</a>
-            </div>
+            </div> -->
           </div>
     
 
-          <div class="mt-[200px] lg:mt-0 lg:w-1/3 bg-transparent p-6 rounded-lg shadow-2xl ">
-            <h2 class="text-xl font-semibold text-blue-800 mb-4 text-center">Avail Our Services - Get in touch</h2>
-            <form action="#" method="POST" class="space-y-4">
-              <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" name="name" id="name" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300">
-              </div>
-              <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300">
-              </div>
-              <div>
-                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-                <input type="tel" name="phone" id="phone" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300">
-              </div>
-              <div>
-                <label for="requirements" class="block text-sm font-medium text-gray-700">Additional Requirements</label>
-                <textarea name="requirements" id="requirements" rows="3"
-                  class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300"></textarea>
-              </div>
-              <button type="submit"
-                class="w-full rounded-md bg-blue-800 px-4 py-2 text-md font-bold text-white shadow-sm hover:bg-blue-900 transform hover:translate-x-2">
-                Submit
-              </button>
-            </form>
+          <div class="mt-[250px] lg:mt-20 lg:w-1/3  ">
+           <img src="assets/banner-bg.png" alt="">
           </div>
         </div>
       </div>
     </section>
     <!-- Logo Carousel Section -->
-     <section class="mt-[550px] ">
+     <section class="mt-[680px] ">
       <div class="container p-8 mx-auto w-full max-w-5xl xl:px-0">
         <div class="flex flex-col justify-center">
             <div class="text-3xl text-center font-bold text-black">Trusted by
@@ -409,21 +415,36 @@
         </div>
       </div>
      </section>
-    <!-- Get in touch Section -->
-     <section>
-      <div class="" style="background-image: url('https://themes.muffingroup.com/be/psychologist2/wp-content/uploads/2020/02/psycho-home-pattern-bg.png'); background-position: center; background-size: contain; background-color: #172e8d;">
-        <div class="mx-auto py-8 sm:px-6 lg:px-8">
-          <div class="relative isolate overflow-hidden px-6 py-12 text-center sm:rounded-3xl sm:px-16">
-            <h2 class="font-nudge-extrabold mx-auto max-w-2xl text-3xl font-bold uppercase tracking-wide sm:text-4xl">Get in touch with us</h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">We cover all time zones and are available around the clock because our editors are from all around the English-speaking world. We are confident that we can handle any editing requirements you may have because our proofreaders are experts with extensive editing expertise.</p>
-            <div class="isolate mt-8 flex items-center justify-center -space-x-2 overflow-hidden">
-              <img class="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/34.jpg" alt="">
-              <img class="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/2.jpg" alt="">
-              <img class="relative z-10 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/3.jpg" alt="">
-              <img class="relative z-0 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/4.jpg" alt="">
+     <!-- Get in Touch Section -->
+    <section class="bg-gradient-to-b from-blue-500 via-gray-50 to-blue-100 mt-10 mx-20">
+      <h2 class="pt-10 text-center mx-auto max-w-2xl text-3xl font-bold uppercase tracking-wide sm:text-5xl">
+        Get in <span class="primary-color font-bold italic">touch with us</span>
+      </h2>
+      <div class="flex flex-wrap justify-center items-center">
+   
+        <div class="w-1/3 px-6 pt-3 pb-6 justify-end right-0 relative">
+
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 w-full h-full pl-3">
+            <path fill="#fff" d="M40.1,-63.2C52.1,-55.6,62.1,-44.1,69.2,-30.6C76.3,-17.1,80.5,-1.6,77.5,11.8C74.5,25.2,64.3,36.5,53.2,47.3C42.1,58.1,30.1,68.4,16.3,73.8C2.5,79.2,-13.1,79.7,-26.5,74.7C-39.9,69.7,-51.1,59.2,-60.5,47.3C-69.9,35.4,-77.5,22.1,-80.9,7.2C-84.3,-7.7,-83.5,-24.1,-76.7,-37.2C-69.9,-50.3,-57.1,-60.1,-43.2,-66.9C-29.3,-73.7,-14.7,-77.5,0.3,-77.9C15.3,-78.4,30.6,-75.5,40.1,-63.2Z" transform="translate(100 100)" />
+          </svg>
+        
+          <img src="assets/get-in-touch.png" class="object-contain h-[350px] pl-32 clip-path-blob" alt="">
+        </div>
+    
+  
+        <div class="mx-auto pt-3 pb-6 sm:px-6 lg:px-8 w-2/3">
+          <div class="relative overflow-hidden px-6 py-3 text-center sm:rounded-3xl sm:px-8">
+            <p class="mt-6 max-w-xl text-lg leading-8 text-gray-600">
+              We cover all time zones and are available around the clock because our editors are from all around the English-speaking world. We are confident that we can handle any editing requirements you may have because our proofreaders are experts with extensive editing expertise.
+            </p>
+            <div class="mt-8 flex items-center -space-x-2 overflow-hidden">
+              <img class="relative z-30 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/24.jpg" alt="">
+              <img class="relative z-20 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/29.jpg" alt="">
+              <img class="relative z-10 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+              <img class="relative z-0 inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
               <span class="!ml-2 font-bold italic primary-color">Join others and avail our services now</span>
             </div>
-            <div class="mt-12 flex items-center justify-center gap-x-6">
+            <div class="mt-12 flex items-center gap-x-6">
               <button type="button" class="text-md relative inline-flex items-center gap-x-2 rounded-lg bg-blue-800 px-6 py-4 font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
                 <span class="absolute -top-5 left-0 w-full text-left text-xs italic primary-color">No Obligations</span>Get Started
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="-mr-0.5 h-5 w-5">
@@ -431,9 +452,7 @@
                 </svg>
               </button>
             </div>
-            <svg viewBox="0 0 1024 1024"
-              class="absolute left-1/2 top-1/2 -z-10 h-[72rem] w-[72rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-              aria-hidden="true">
+            <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[72rem] w-[72rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
               <circle cx="512" cy="512" r="512" fill="url(#primary-color-gradient)" fill-opacity="1.0"></circle>
               <defs>
                 <radialGradient id="primary-color-gradient">
