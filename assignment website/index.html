@@ -7,33 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Assignment Website</title>
     <link rel="stylesheet" href="index.css" />
-    <style>
-      @layer utilities {
-        .primary-color {
-          color: #172e8d;
-        }
-        .bg-primary-color {
-          background-color: #172e8d;
-        }
-
-        .secondary-color {
-          color: #ffd404;
-        }
-        .bg-secondary-color {
-          background-color: #ffd404;
-        }
-        .hover\:primary-color:hover {
-          color: #172e8d;
-        }
-
-        .hover\:secondary-color:hover {
-          color: #ffd404;
-        }
-      }
-      .clip-path-blob {
-        clip-path: url(#blob);
-      }
-    </style>
+    <link rel="stylesheet" href="tailwind-config.css">
     <script>
       // on scroll add bg-white to navbar and when we scroll back to top remove bg-white
       window.addEventListener("scroll", function () {
