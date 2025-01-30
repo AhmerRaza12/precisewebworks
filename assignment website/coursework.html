@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Assignment Website- Coursework</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="tailwind-config.css">
+    <link rel="stylesheet" href="tailwind-config.css" />
     <script>
       // on scroll add bg-white to navbar and when we scroll back to top remove bg-white
       window.addEventListener("scroll", function () {
@@ -142,108 +142,115 @@
     <section class="relatve">
       <div class="flex flex-col md:flex-row">
         <div
-        class="mx-auto md:w-[65%] max-w-7xl px-5 py-8 md:px-6 md:pt-24 lg:pt-32"
-      >
-        <div class="mx-auto mb-6 w-full max-w-3xl text-center md:mb-8 lg:mb-10">
-          <h1 class="mb-4 text-4xl font-semibold md:text-4xl">
-            Worried about Lengthy<span
-              class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white"
-              >Coursework?</span
-            >
-          </h1>
-          <p class="mx-auto mb-5 max-w-4xl text-gray-700 lg:mb-2">
-            Don’t worry, our Assignments can assist you with proofreading and
-            editing your coursework.
-          </p>
-          <p class="mx-auto max-w-4xl text-gray-700 lg:mb-4">
-            Business plans, case studies, lab reports, and marketing plans are
-            among the assignments we edit and proofread. A formal written
-            document that outlines business objectives, strategies for achieving
-            them, and the deadlines for doing so is what we provide as per the
-            requirement. We understand the lengthy coursework provided based on
-            all the reading that has been taught in class.
-          </p>
-          <!-- Button Wrap -->
-          <div class="flex justify-center">
-            <a
-              href="#"
-              class="mr-5 inline-block rounded-xl bg-blue-800 px-8 py-4 text-center font-semibold text-white [box-shadow:rgb(23,_46,_141)_6px_6px] md:mr-6"
-              >Get Started</a
-            >
+          class="mx-auto md:w-[65%] max-w-7xl px-5 py-8 md:px-6 md:pt-24 lg:pt-32"
+        >
+          <div
+            class="mx-auto mb-6 w-full max-w-3xl text-center md:mb-8 lg:mb-10"
+          >
+            <h1 class="mb-4 text-4xl font-semibold md:text-4xl">
+              Worried about Lengthy<span
+                class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white"
+                >Coursework?</span
+              >
+            </h1>
+            <p class="mx-auto mb-5 max-w-4xl text-gray-700 lg:mb-2">
+              Don’t worry, our Assignments can assist you with proofreading and
+              editing your coursework.
+            </p>
+            <p class="mx-auto max-w-4xl text-gray-700 lg:mb-4">
+              Business plans, case studies, lab reports, and marketing plans are
+              among the assignments we edit and proofread. A formal written
+              document that outlines business objectives, strategies for
+              achieving them, and the deadlines for doing so is what we provide
+              as per the requirement. We understand the lengthy coursework
+              provided based on all the reading that has been taught in class.
+            </p>
+            <!-- Button Wrap -->
+            <div class="flex justify-center">
+              <a
+                href="#"
+                class="mr-5 inline-block rounded-xl bg-blue-800 px-8 py-4 text-center font-semibold text-white [box-shadow:rgb(23,_46,_141)_6px_6px] md:mr-6"
+                >Get Started</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="md:w-[40%] py-8 px-4 md:px-6 md:pt-24 lg:pt-32">
-        <form action="" class="bg-blue-100 p-6 rounded-xl shadow-lg">
-          <!-- form with fields Name,phone,email and additional information -->
-          <!-- Name and Phone fields in same row  half width-->
-           <div class="flex gap-2">
-            <div class="mb-4 w-1/2">
-              <label for="name" class="block text-sm  primary-color uppercase font-bold"
-                >Name</label
+        <div class="md:w-[40%] py-8 px-4 md:px-6 md:pt-24 lg:pt-32">
+          <form action="" class="bg-blue-100 p-6 rounded-xl shadow-lg">
+            <!-- form with fields Name,phone,email and additional information -->
+            <!-- Name and Phone fields in same row  half width-->
+            <div class="flex gap-2">
+              <div class="mb-4 w-1/2">
+                <label
+                  for="name"
+                  class="block text-sm primary-color uppercase font-bold"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+              <div class="mb-4 w-1/2">
+                <label
+                  for="phone"
+                  class="block text-sm primary-color uppercase font-bold"
+                  >Phone</label
+                >
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="email"
+                class="block text-sm primary-color uppercase font-bold"
+                >Email</label
               >
               <input
-                type="text"
-                name="name"
-                id="name"
+                type="email"
+                name="email"
+                id="email"
                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               />
             </div>
-            <div class="mb-4 w-1/2">
-              <label for="phone" class="block text-sm  primary-color uppercase font-bold"
-                >Phone</label
+            <div class="mb-4">
+              <label
+                for="requirements"
+                class="block text-sm primary-color uppercase font-bold"
+                >Additional Requirements</label
               >
-              <input
-                type="text"
-                name="phone"
-                id="phone"
+              <textarea
+                id="requirements"
+                name="requirements"
+                rows="3"
                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-              />
+              ></textarea>
             </div>
-
-           </div>
-        
-          <div class="mb-4">
-            <label for="email" class="block text-sm  primary-color uppercase font-bold"
-              >Email</label
-            >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="requirements" class="block text-sm  primary-color uppercase font-bold"
-              >Additional Requirements</label
-            >
-            <textarea
-              id="requirements"
-              name="requirements"
-              rows="3"
-              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            ></textarea>
-          </div>
-          <div class="mb-4">
-           <button
-              type="submit"
-              class="w-full inline-block rounded-xl bg-white hover:bg-blue-400 transition-colors duration-200 ease-in-out px-8 py-4 text-center font-semibold text-black [box-shadow:rgb(23,_46,_141)_6px_6px]"
-            >
-              Submit
-            </button>
-           
-          </div>
-        </form>
+            <div class="mb-4">
+              <button
+                type="submit"
+                class="w-full inline-block rounded-xl bg-white hover:bg-blue-400 transition-colors duration-200 ease-in-out px-8 py-4 text-center font-semibold text-black [box-shadow:rgb(23,_46,_141)_6px_6px]"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
 
-      </div>
-      
       <!-- BG Images -->
       <img
         src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg"
         alt=""
-        class="absolute bottom-0 left-0 right-auto top-0 -z-10  hidden sm:inline-block  "
+        class="absolute bottom-0 left-0 right-auto top-0 -z-10 hidden sm:inline-block"
       />
       <img
         src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905ba1538296b3f50a905e_pattern-2.svg"
