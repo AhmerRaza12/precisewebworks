@@ -29,7 +29,12 @@
         padding-bottom: 2px;
         
     }
-    
+    .mobile-active-nav-link{
+        color: #172e8d !important;
+        border-bottom: 2px solid #172e8d;
+        padding-bottom: 2px;
+  
+    }
 
 
 
