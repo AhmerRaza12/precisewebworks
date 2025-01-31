@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(
             function (response) {
               console.log("SUCCESS!", response.status, response.text);
-              alert("Email Sent Successfully");
+              window.location.href = "thankyou.html";
               submitButton.innerHTML = "Submit"; 
               submitButton.disabled = false;
             },
