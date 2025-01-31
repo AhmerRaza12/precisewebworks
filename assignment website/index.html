@@ -5,12 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "B1OYlWtB3Y7TdoSP7",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM Loaded. Fetching data...");
+
+        const web_url = window.location.href;
+        console.log("Web URL:", web_url);
+
+        const urlField = document.getElementById("web_url");
+        if (urlField) {
+          urlField.value = web_url;
+          console.log("Web URL set in input field");
+        } else {
+          console.error("web_url input field not found!");
+        }
+
+        fetch("https://api64.ipify.org?format=json")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("User IP:", data.ip);
+
+            const ipField = document.getElementById("user_ip");
+            if (ipField) {
+              ipField.value = data.ip;
+              console.log("User IP set in input field");
+            } else {
+              console.error("user_ip input field not found!");
+            }
+          })
+          .catch((error) => console.error("Error fetching IP:", error));
+      });
+    </script>
     <title>Assignment Website</title>
-    <link
-      rel="icon"
-      href="./assets/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="tailwind-config.css" />
     <script>
@@ -36,7 +74,6 @@
             >
               <div class="flex items-center justify-between w-full lg:w-auto">
                 <a href="index.html">
-                  
                   <img
                     src="./assets/start assignment ( png )-01.png"
                     loading="lazy"
@@ -295,7 +332,7 @@
               <h2 class="text-xl font-semibold text-blue-800 mb-4 text-center">
                 Avail Our Services - Get in touch
               </h2>
-              <form action="#" method="POST" class="space-y-4">
+              <form id="sendmailform" method="POST" class="space-y-4">
                 <div>
                   <label
                     for="name"
@@ -351,6 +388,8 @@
                     class="mt-1 p-2 max-sm:row-span-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-300"
                   ></textarea>
                 </div>
+                <input type="hidden" name="user_ip" id="user_ip" />
+                <input type="hidden" name="web_url" id="web_url" />
                 <button
                   type="submit"
                   class="w-full rounded-md bg-blue-800 px-4 py-2 text-md font-bold text-white shadow-sm hover:bg-blue-900 transform hover:translate-x-2"
@@ -529,7 +568,7 @@
                   </h3>
                   <p class="px-4">
                     Coursework might seem very dry for some students, which is
-                    also time-taking to be completed. Precise Assignments helps
+                    also time-taking to be completed. Start Assignments helps
                     students complete their coursework without difficulties at a
                     given timeframe to let them succeed.
                   </p>
@@ -685,7 +724,7 @@
               Business Management
             </p>
             <p class="text-black">
-              Refine your business essays and ace assignments with Precise
+              Refine your business essays and ace assignments with Start
               Assignments' services.
             </p>
           </div>
@@ -707,7 +746,7 @@
             </p>
             <p class="text-black">
               Simplify technical writing and perfect your technical assignments
-              with Precise Assignments.
+              with Start Assignments.
             </p>
           </div>
           <!-- Card 3 -->
@@ -721,8 +760,8 @@
             </div>
             <p class="mb-4 text-xl font-semibold primary-color">Engineering</p>
             <p class="text-blacks">
-              Get professionally written engineering essays and precise
-              proofreading with Precise Assignments.
+              Get professionally written engineering essays and Start
+              proofreading with Start Assignments.
             </p>
           </div>
           <!-- Card 4 -->
@@ -743,7 +782,7 @@
             </p>
             <p class="text-black">
               Polish your finance reports and accounting essays with our expert
-              assistance at Precise Assignments.
+              assistance at Start Assignments.
             </p>
           </div>
           <!-- Card 5 -->
@@ -758,7 +797,7 @@
             <p class="mb-4 text-xl font-semibold primary-color">Law</p>
             <p class="text-black">
               Ensure your legal assignments and case studies are flawless with
-              Precise Assignments' academic services.
+              Start Assignments' academic services.
             </p>
           </div>
           <!-- Card 6 -->
@@ -775,7 +814,7 @@
             </p>
             <p class="text-black">
               Perfect your medical essays, nursing assignments, and research
-              papers with Precise Assignments.
+              papers with Start Assignments.
             </p>
           </div>
           <!-- Card 7 -->
@@ -796,7 +835,7 @@
             </p>
             <p class="text-black">
               Make your social sciences papers shine with expert academic help
-              from Precise Assignments.
+              from Start Assignments.
             </p>
           </div>
           <!-- Card 8 -->
@@ -812,7 +851,7 @@
               English Literature
             </p>
             <p class="text-black">
-              Craft compelling essays and analyze texts perfectly with Precise
+              Craft compelling essays and analyze texts perfectly with Start
               Assignments' academic services.
             </p>
           </div>
@@ -1059,12 +1098,12 @@
               title="Company"
               class="inline-flex items-center"
             >
-              <img src="assets/start assignment ( png )-01.png" 
-              alt="Logo"
-              height="150"
-              width="150"
-              >
-
+              <img
+                src="assets/start assignment ( png )-01.png"
+                alt="Logo"
+                height="150"
+                width="150"
+              />
             </a>
             <div class="mt-6 lg:max-w-sm">
               <p class="text-sm text-gray-800">
@@ -1179,4 +1218,36 @@
     </section>
   </body>
   <script src="nav-menu.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      document
+        .getElementById("sendmailform")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(this);
+          let messageTable =
+            "<table border='1' cellspacing='0' cellpadding='5'>";
+          messageTable += "<tr><th>Field</th><th>Data</th></tr>";
+          for (const [key, value] of formData.entries()) {
+            messageTable += `<tr><td>${key}</td><td>${value}</td></tr>`;
+          }
+          messageTable += "</table>";
+          emailjs
+            .send("service_g675ycm", "template_j7jq8i9", {
+              message: messageTable,
+              to_email: "rmuuu123@gmail.com",
+            })
+            .then(
+              function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Email Sent Successfully");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+                alert("Email Failed to Send");
+              }
+            );
+        });
+    });
+  </script>
 </html>
