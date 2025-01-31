@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         emailjs
           .send("service_g675ycm", "template_j7jq8i9", {
             message: messageTable,
-            to_email: "rmuuu123@gmail.com",
+            to_email: "help@startassignments.co.uk",
           })
           .then(
             function (response) {
