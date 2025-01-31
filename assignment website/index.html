@@ -16,37 +16,7 @@
         });
       })();
     </script>
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function () {
-        console.log("DOM Loaded. Fetching data...");
-
-        const web_url = window.location.href;
-        console.log("Web URL:", web_url);
-
-        const urlField = document.getElementById("web_url");
-        if (urlField) {
-          urlField.value = web_url;
-          console.log("Web URL set in input field");
-        } else {
-          console.error("web_url input field not found!");
-        }
-
-        fetch("https://api64.ipify.org?format=json")
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("User IP:", data.ip);
-
-            const ipField = document.getElementById("user_ip");
-            if (ipField) {
-              ipField.value = data.ip;
-              console.log("User IP set in input field");
-            } else {
-              console.error("user_ip input field not found!");
-            }
-          })
-          .catch((error) => console.error("Error fetching IP:", error));
-      });
-    </script>
+    <script src="index.js"></script>
     <title>Assignment Website</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
@@ -391,6 +361,7 @@
                 <input type="hidden" name="user_ip" id="user_ip" />
                 <input type="hidden" name="web_url" id="web_url" />
                 <button
+                  id="submit-button"
                   type="submit"
                   class="w-full rounded-md bg-blue-800 px-4 py-2 text-md font-bold text-white shadow-sm hover:bg-blue-900 transform hover:translate-x-2"
                 >
@@ -1218,36 +1189,6 @@
     </section>
   </body>
   <script src="nav-menu.js"></script>
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
-      document
-        .getElementById("sendmailform")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const formData = new FormData(this);
-          let messageTable =
-            "<table border='1' cellspacing='0' cellpadding='5'>";
-          messageTable += "<tr><th>Field</th><th>Data</th></tr>";
-          for (const [key, value] of formData.entries()) {
-            messageTable += `<tr><td>${key}</td><td>${value}</td></tr>`;
-          }
-          messageTable += "</table>";
-          emailjs
-            .send("service_g675ycm", "template_j7jq8i9", {
-              message: messageTable,
-              to_email: "rmuuu123@gmail.com",
-            })
-            .then(
-              function (response) {
-                console.log("SUCCESS!", response.status, response.text);
-                alert("Email Sent Successfully");
-              },
-              function (error) {
-                console.log("FAILED...", error);
-                alert("Email Failed to Send");
-              }
-            );
-        });
-    });
+  <script src="sending-mail.js"></script>
   </script>
 </html>

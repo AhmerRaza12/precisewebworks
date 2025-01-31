@@ -13,13 +13,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="tailwind-config.css" />
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "B1OYlWtB3Y7TdoSP7",
+        });
+      })();
+    </script>
     <script>
       window.addEventListener("scroll", function () {
         var header = document.querySelector(".navbar-scroll");
         header.classList.toggle("bg-white", window.scrollY > 0);
       });
     </script>
+    <script src="index.js"></script>
   </head>
   <body>
     <!-- Navbar Section -->
@@ -253,7 +264,7 @@
           </div>
         </div>
         <div class="md:w-[40%] py-8 px-4 md:px-6 md:pt-24 lg:pt-32">
-          <form action="" class="bg-blue-50 p-6 rounded-xl shadow-lg">
+          <form id="sendmailform" action="" class="bg-blue-50 p-6 rounded-xl shadow-lg">
             <!-- form with fields Name,phone,email and additional information -->
             <!-- Name and Phone fields in same row  half width-->
             <div class="flex gap-2">
@@ -313,6 +324,7 @@
             </div>
             <div class="mb-4">
               <button
+                id="submit-button"
                 type="submit"
                 class="w-full inline-block rounded-xl bg-white hover:bg-blue-800 hover:text-white transition-colors duration-200 ease-in-out px-8 py-4 text-center font-semibold text-black [box-shadow:rgb(23,_46,_141)_-6px_6px]"
               >
@@ -1125,4 +1137,5 @@
     </section>
   </body>
   <script src="nav-menu.js"></script>
+  <script src="sending-mail.js"></script>
 </html>
